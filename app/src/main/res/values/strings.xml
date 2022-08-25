@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">ProjectoAplicacionCbtis</string>
+    <string name="app_name">Cbtis238 XD</string>
     <string name="icono_persona">Icono persona</string>
     <string name="login">INICIAR SESIÓN</string>
+    <string name="mensaje_cuenta">Registrarse</string>
     <string name="password">Contraseña</string>
     <string name="mail">Email</string>
     <string name="btn_continuar">Continuar</string>
-    <string name="mesaje_de_inicio">Enterate de todo lo que pasa en tu institución</string>
+    <string name="mesaje_de_inicio">Ingresa a tu cuenta</string>
+    <string name="mensaje_crear_cuenta">Eres nuevo por aquí?</string>
 </resources>
