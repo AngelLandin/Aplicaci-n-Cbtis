@@ -1,8 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantalla_inicio"
+    android:gravity="fill_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    //Aqui vas a trabajar con los dos botones, el de iniciar sesión y el de crear cuenta.
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="358dp"
+        android:layout_height="506dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="125dp"
+        android:fontFamily="@font/dynap"
+        android:gravity="center"
+        android:paddingTop="38dp"
+        android:text="@string/mesaje_de_inicio"
+        android:textColor="@color/white"
+        android:textSize="29sp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/iniciar_sesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/color_boton_iniciar_sesion"
+        android:fontFamily="@font/sans_pro"
+        android:text="iniciar sesion"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/registrarce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/color_boton_iniciar_sesion"
+        android:fontFamily="@font/sans_pro"
+        android:text="registrarse"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+
+</LinearLayout>
