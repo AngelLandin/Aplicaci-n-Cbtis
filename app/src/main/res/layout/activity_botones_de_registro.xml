@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,11 +7,11 @@
     android:background="@drawable/fondo_pantalla_inicio"
     android:gravity="fill_vertical"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".IniciarSesión">
 
 
     <TextView
-        android:layout_width="358dp"
+        android:layout_width="382dp"
         android:layout_height="506dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="125dp"
@@ -23,7 +24,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/iniciar_sesion"
+        android:id="@+id/btniniciar_sesión"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -38,7 +39,7 @@
         app:backgroundTint="@null" />
 
     <Button
-        android:id="@+id/registrarce"
+        android:id="@+id/btnregistrarce"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
