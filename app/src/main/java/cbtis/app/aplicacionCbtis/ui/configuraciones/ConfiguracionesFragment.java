@@ -1,4 +1,4 @@
-package cbtis.app.aplicacionCbtis;
+package cbtis.app.aplicacionCbtis.ui.configuraciones;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import cbtis.app.aplicacionCbtis.R;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -7,7 +7,7 @@
     android:background="@drawable/fondo_pantalla_inicio"
     android:gravity="fill_vertical"
     android:orientation="vertical"
-    tools:context=".IniciarSesión">
+    tools:context=".BotonesDeRegistro">
 
 
     <TextView
@@ -24,7 +24,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btniniciar_sesión"
+        android:id="@+id/btnIniciarSesion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -39,7 +39,7 @@
         app:backgroundTint="@null" />
 
     <Button
-        android:id="@+id/btnregistrarce"
+        android:id="@+id/btnregistrarse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"

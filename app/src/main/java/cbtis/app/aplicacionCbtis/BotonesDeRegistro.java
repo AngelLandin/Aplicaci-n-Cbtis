@@ -7,24 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import cbtis.app.aplicacionCbtis.databinding.ActivityBotonesDeRegistroBinding;
+
 public class BotonesDeRegistro extends AppCompatActivity {
-
-    private Button btniniciar_sesión;
-    private Button btnregistrarse;
-
+    private ActivityBotonesDeRegistroBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_botones_de_registro);
-        btniniciar_sesión = (Button)findViewById(R.id.btniniciar_sesión);
-        btnregistrarse = (Button) findViewById(R.id.btnregistrarce);
-        Intent btnRegistrarse = new Intent(this, Registro.class);
+        binding = ActivityBotonesDeRegistroBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+
+        Intent btnRegistrarse = new Intent(BotonesDeRegistro.this, Registro.class);
         Intent bttIniciarSesión = new Intent( BotonesDeRegistro.this, IniciarSesión.class);
 
-
-
-        btnregistrarse.setOnClickListener(new View.OnClickListener() {
+        binding.btnregistrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -32,7 +30,7 @@ public class BotonesDeRegistro extends AppCompatActivity {
             }
         });
 
-        btniniciar_sesión.setOnClickListener(new View.OnClickListener() {
+        binding.btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(bttIniciarSesión);

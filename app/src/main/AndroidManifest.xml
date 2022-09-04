@@ -26,13 +26,18 @@
         </activity>
         <activity
             android:name=".Registro"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".IniciarSesión"
-            android:exported="true"/>
+            android:exported="true"
+            android:screenOrientation="portrait"/>
 
-
-
+        <activity
+            android:name=".BarraNavegacion"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>
