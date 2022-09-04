@@ -93,7 +93,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nombre"
                 android:textColorHint="@color/black"
                 android:inputType="textCapWords"
                 android:textColor="@color/black"/>
@@ -123,7 +122,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
                 android:textColorHint="@color/black"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/black" />
@@ -137,7 +135,6 @@
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginTop="5dp"
-            android:hint="@string/password"
             app:hintTextColor="@color/black"
             app:counterEnabled="true"
             app:counterMaxLength="30"
@@ -182,7 +179,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Confirmar contraseña"
                 android:textColorHint="@color/black"
                 android:inputType="textPassword"
                 android:textColor="@color/black"/>

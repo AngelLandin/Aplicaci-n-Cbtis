@@ -9,32 +9,33 @@ import android.widget.Button;
 
 public class BotonesDeRegistro extends AppCompatActivity {
 
-    Button btniniciar_sesión,btnregistrarce;
+    private Button btniniciar_sesión;
+    private Button btnregistrarse;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_botones_de_registro);
-        btniniciar_sesión=(Button)findViewById(R.id.btniniciar_sesión);
-        btnregistrarce=(Button) findViewById(R.id.btnregistrarce);
+        btniniciar_sesión = (Button)findViewById(R.id.btniniciar_sesión);
+        btnregistrarse = (Button) findViewById(R.id.btnregistrarce);
+        Intent btnRegistrarse = new Intent(this, Registro.class);
+        Intent bttIniciarSesión = new Intent( BotonesDeRegistro.this, IniciarSesión.class);
 
-        btnregistrarce.setOnClickListener(new View.OnClickListener() {
+
+
+        btnregistrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent btnregistrarce = new Intent(BotonesDeRegistro.this, Registro.class);
-                startActivity(btnregistrarce);
+                startActivity(btnRegistrarse);
             }
         });
 
         btniniciar_sesión.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-                Intent btniniciar_sesión = new Intent( BotonesDeRegistro.this, IniciarSesión.class);
-                startActivity(btniniciar_sesión);
+                startActivity(bttIniciarSesión);
             }
         });
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/principal"
+        android:title="@string/titulo_principal"
+        android:icon="@drawable/notificaciones"
+        />
+
+    <item
+        android:id="@+id/cursos"
+        android:title="@string/titulo_cursos"
+        android:icon="@drawable/cursos"
+        />
+
+    <item
+        android:id="@+id/noticias"
+        android:title="@string/titulo_noticias"
+        android:icon="@drawable/noticias"
+        />
+
+    <item
+        android:id="@+id/configuraciones"
+        android:title="@string/titulo_configuraciones"
+        android:icon="@drawable/notificaciones"
+        />
+</menu>

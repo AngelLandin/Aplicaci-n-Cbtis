@@ -12,10 +12,22 @@
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/drawable/ic_wave.xml" value="0.1385" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/drawable/round_border.xml" value="0.1385" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/drawable/style_button.xml" value="0.1385" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_barra_navegacion.xml" value="0.25" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_botones_de_registro.xml" value="0.19166666666666668" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.19166666666666668" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_interfaz_registro.xml" value="0.33" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/barra_navegacion.xml" value="0.2" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/botones_de_registros.xml" value="0.25" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/crear_cuenta.xml" value="0.2" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_configuraciones.xml" value="0.2" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_cursos.xml" value="0.2" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_noticias.xml" value="0.2" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_notifications.xml" value="0.2" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_principal.xml" value="0.2" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19166666666666668" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/menu/bttom_nav_menu.xml" value="0.2" />
         <entry key="..\:/Users/bryan/StudioProjects/Aplicacion-Cbtis/app/src/main/res/layout/activity_botones_de_registro.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/bryan/StudioProjects/Aplicacion-Cbtis/app/src/main/res/layout/activity_interfaz_registro.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/bryan/StudioProjects/Aplicacion-Cbtis/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />

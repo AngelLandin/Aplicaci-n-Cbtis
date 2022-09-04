@@ -8,4 +8,11 @@
     <string name="btn_continuar">Continuar</string>
     <string name="mesaje_de_inicio">Ingresa a tu cuenta</string>
     <string name="mensaje_crear_cuenta">Eres nuevo por aquí?</string>
+
+    <string name="titulo_principal">Principal</string>
+    <string name="titulo_cursos">Cursos</string>
+    <string name="titulo_noticias">Noticias</string>
+    <string name="titulo_configuraciones">Configuraciones</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
