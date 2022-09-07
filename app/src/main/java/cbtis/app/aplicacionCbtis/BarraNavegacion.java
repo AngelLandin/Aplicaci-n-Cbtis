@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 import cbtis.app.aplicacionCbtis.databinding.ActivityBarraNavegacionBinding;
 import cbtis.app.aplicacionCbtis.ui.configuraciones.ConfiguracionesFragment;
 import cbtis.app.aplicacionCbtis.ui.cursos.CursosFragment;
+import cbtis.app.aplicacionCbtis.ui.home.HogarFragment;
 import cbtis.app.aplicacionCbtis.ui.noticias.NoticiasFragment;
 import cbtis.app.aplicacionCbtis.PrincipalFragment;
 
@@ -37,6 +38,9 @@ public class BarraNavegacion extends AppCompatActivity {
                     break;
                 case R.id.configuraciones:
                     remplazarFragment(new ConfiguracionesFragment());
+                    break;
+                case R.id.hogar:
+                    remplazarFragment(new HogarFragment());
                     break;
             }
             return true;

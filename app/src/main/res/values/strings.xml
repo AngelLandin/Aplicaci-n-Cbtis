@@ -9,9 +9,13 @@
     <string name="mesaje_de_inicio">Ingresa a tu cuenta</string>
     <string name="mensaje_crear_cuenta">¿Eres nuevo por aquí?</string>
 
-    <string name="titulo_principal">Principal</string>
+    <string name="titulo_notificaciones">Notificaciones</string>
     <string name="titulo_cursos">Cursos</string>
     <string name="titulo_noticias">Noticias</string>
     <string name="titulo_configuraciones">Configuraciones</string>
+    <string name="titulo_hogar">Hogar</string>
+    <string name="titulo_comunidad">Comunidad</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

@@ -2,8 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/hogar"
+        android:title="@string/titulo_hogar"
+        android:icon="@drawable/cursos"
+        />
+
+    <item
         android:id="@+id/principal"
-        android:title="@string/titulo_principal"
+        android:title="@string/titulo_notificaciones"
         android:icon="@drawable/notificaciones"
         />
 
@@ -24,4 +30,5 @@
         android:title="@string/titulo_configuraciones"
         android:icon="@drawable/configuraciones"
         />
+
 </menu>
