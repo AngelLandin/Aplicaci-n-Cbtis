@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/hogar"
-        android:title="@string/titulo_hogar"
-        android:icon="@drawable/home"
-        />
 
     <item
         android:id="@+id/principal"
@@ -17,6 +12,12 @@
         android:id="@+id/cursos"
         android:title="@string/titulo_cursos"
         android:icon="@drawable/cursos"
+        />
+
+    <item
+        android:id="@+id/hogar"
+        android:title="@string/titulo_hogar"
+        android:icon="@drawable/home"
         />
 
     <item
