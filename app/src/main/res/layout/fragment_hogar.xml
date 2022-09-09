@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#92ff99"
+    android:background="@color/white"
     tools:context=".ui.home.HogarFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fragment Hogar"
-        android:layout_gravity="center"
-        android:textSize="40sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:background="#c77dff"
+        android:orientation="horizontal">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="143dp"
+            android:layout_height="169dp"
+            android:src="@drawable/zerotwo"
+            app:civ_border_color="@color/grey"
+            app:civ_border_width="1dp" />
+
+    </LinearLayout>
 </FrameLayout>
