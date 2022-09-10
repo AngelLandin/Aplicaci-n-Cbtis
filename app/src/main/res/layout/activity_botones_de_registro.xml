@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_pantalla_inicio"
+    android:background="@drawable/ic_bg"
     android:gravity="fill_vertical"
     android:orientation="vertical"
     tools:context=".BotonesDeRegistro">
