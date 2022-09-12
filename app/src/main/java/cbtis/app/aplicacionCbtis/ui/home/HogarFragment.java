@@ -7,15 +7,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 import cbtis.app.aplicacionCbtis.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HogarFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class HogarFragment extends Fragment {
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,7 +24,7 @@ public class HogarFragment extends Fragment {
     private String mParam2;
 
     public HogarFragment() {
-        // Required empty public constructor
+        //Este es un Constructor vacio de la clase, requerido
     }
 
     /**
@@ -56,11 +53,9 @@ public class HogarFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_hogar, container, false);
+
     }
 }
