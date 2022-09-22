@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#99F4F5"
+    tools:context=".ui.comunidad.ComunidadFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kanit_bold"
+                android:text="Clubs Cbtis"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="40sp"
+                android:layout_margin="10dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="80dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/red_orange"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Clubs Deportivos"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/dangrek"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="6dp">
+
+                        <ImageView
+                            android:id="@+id/club_a"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/futbol" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_a"
+                            android:layout_toRightOf="@id/club_a"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:text="Club de Futbol"
+                                android:textAlignment="center"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:text="Juego entre dos equipos de once jugadores cada uno, cuyo objetivo es hacer entrar en la portería contraria un balón que no puede ser tocado con las manos ni con los brazos"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_basquet"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            app:srcCompat="@drawable/basquet"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_basquet"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/club_basquet">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Basquetbol"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="El baloncesto o básquetbol es un deporte en el cual compiten dos equipos de cinco jugadores cada uno. El objetivo es introducir la pelota (balón) en el aro (cesta o canasta) del equipo contrario"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_taekwondo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            app:srcCompat="@drawable/taekwando"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_taekwondo"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/club_taekwondo">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Taekwondo"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="El taekwondo es un arte marcial tradicional de Corea. En el taekwondo se pueden utilizar las manos y los pies para vencer a un oponente, pero el sello distintivo de este deporte son sus combinaciones de patadas"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_voleibol"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            app:srcCompat="@drawable/voleibol"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_voleibol"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/club_voleibol">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Voleibol"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="El voleibol, es un deporte donde dos equipos se enfrentan sobre un terreno de juego liso separados por una red central, tratando de pasar el balón por encima de la red hacia el suelo del campo contrario"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="80dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/red_orange"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Clubs Culturales"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/dangrek"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_danza"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            app:srcCompat="@drawable/danza"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_danza"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/club_danza">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Danza"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="La danza es un movimiento puesto en forma rítmica y espacial, una sucesión de movimientos que comienza, se desarrolla y finaliza"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_dibujo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/dibujo" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_dibujo"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/club_dibujo">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Dibujo"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="El Club De Dibujo fue creado para todas las personas que están interesadas en dibujar, ya sea como hobby o como parte de su profesión"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_ciencias"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            app:srcCompat="@drawable/ciencias"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_ciencias"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/club_ciencias">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Ciencias"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="Lo forman un grupo de jóvenes con una organización establecida que, orientados por un adulto , desarrollan actividades que favorecen la educación científica y tecnología del grupo y de la comunidad, contribuyendo a una mejor comprensión de la función de la ciencia y la tecnología en el momento actual."
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_rondalla"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/rondalla" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_rondalla"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/club_rondalla">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Rondalla"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="La rondalla es un conjunto musical conformado por instrumentos de cuerda que se tocan generalmente con el plectro. El Club de Rondalla le ofrece cantar y divertirse y tocar un instrumento musical."
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_ecologia"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/ecologia" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_ecologia"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/club_ecologia">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Ecologia"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="El ecologismo como movimiento social pretende extender la concienciación sobre la problemática ambiental, transmitir información y conocimientos sobre el medio, y propiciar la participación ciudadana"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_teatro"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            app:srcCompat="@drawable/teatro"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_teatro"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/club_teatro">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Teatro"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="El teatro es la rama del arte escénico relacionada con la actuación, que representa historias frente a una audiencia usando una combinación de discurso, gestos, escenografía, música, sonido y espectáculo"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/image_club"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            app:srcCompat="@drawable/ajedrez"/>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/image_club"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/image_club">
+
+                            <TextView
+                                android:id="@+id/nombre_del_club"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Ajedrez"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/descripcion_club"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="El ajedrez es un juego de estrategia en el que dos personas se desafían frente a un tablero cuadriculado de 64 casillas y dos grupos de figuras"
+                                />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_banda_guerra"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:adjustViewBounds="true"
+                            android:foregroundGravity="center"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/banda_guerra" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@id/club_banda_guerra"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/club_banda_guerra">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/dynap"
+                                android:textAllCaps="true"
+                                android:textAlignment="center"
+                                android:text="Club de Banda de Guerra"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sans_pro"
+                                android:textColor="@color/black"
+                                android:text="Es una disciplina que se practica por medio de cornetas y clarines, se hace acompañar con caseros, la cual está constituida por 12 caseros, 12 cornetas, una corneta y un comandante"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

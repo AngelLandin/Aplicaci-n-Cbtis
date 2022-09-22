@@ -10,11 +10,6 @@ import android.view.ViewGroup;
 
 import cbtis.app.aplicacionCbtis.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ConfiguracionesFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ConfiguracionesFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match

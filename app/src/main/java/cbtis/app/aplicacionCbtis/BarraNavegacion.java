@@ -7,11 +7,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import cbtis.app.aplicacionCbtis.databinding.ActivityBarraNavegacionBinding;
+import cbtis.app.aplicacionCbtis.ui.comunidad.ComunidadFragment;
 import cbtis.app.aplicacionCbtis.ui.configuraciones.ConfiguracionesFragment;
-import cbtis.app.aplicacionCbtis.ui.cursos.CursosFragment;
 import cbtis.app.aplicacionCbtis.ui.home.HogarFragment;
 import cbtis.app.aplicacionCbtis.ui.noticias.NoticiasFragment;
-import cbtis.app.aplicacionCbtis.PrincipalFragment;
 
 public class BarraNavegacion extends AppCompatActivity {
 
@@ -22,16 +21,16 @@ public class BarraNavegacion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityBarraNavegacionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        remplazarFragment(new PrincipalFragment());
+        remplazarFragment(new cbtis.app.aplicacionCbtis.PrincipalFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId()){
                 case R.id.principal:
-                    remplazarFragment(new PrincipalFragment());
+                    remplazarFragment(new cbtis.app.aplicacionCbtis.PrincipalFragment());
                     break;
-                case R.id.cursos:
-                    remplazarFragment(new CursosFragment());
+                case R.id.comunidad:
+                    remplazarFragment(new ComunidadFragment());
                     break;
                 case R.id.noticias:
                     remplazarFragment(new NoticiasFragment());

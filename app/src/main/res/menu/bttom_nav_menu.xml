@@ -10,8 +10,8 @@
         />
 
     <item
-        android:id="@+id/cursos"
-        android:title="@string/titulo_cursos"
+        android:id="@+id/comunidad"
+        android:title="@string/titulo_comunidad"
         android:icon="@drawable/cursos"
         android:iconTint="@color/black"
         />
