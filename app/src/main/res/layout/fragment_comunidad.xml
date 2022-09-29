@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#99F4F5"
+    android:background="#dee2e6"
     tools:context=".ui.comunidad.ComunidadFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -17,43 +17,51 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/kanit_bold"
-                android:text="Clubs Cbtis"
-                android:textColor="@color/black"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textSize="40sp"
-                android:layout_margin="10dp"/>
+                android:orientation="horizontal">
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="80dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:backgroundTint="@color/red_orange"
-                >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Clubs Deportivos"
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clubs"
                     android:textAllCaps="true"
                     android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
                     android:textStyle="bold"
+                    android:paddingHorizontal="60dp"
+                    android:background="@drawable/botones_comunidad"
                     android:textAlignment="center"
-                    android:textSize="30sp"
-                    android:fontFamily="@font/dangrek"
-                    />
-            </com.google.android.material.card.MaterialCardView>
+                    app:backgroundTint="@null"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/dangrek"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Especialidad"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="60dp"
+                    android:background="@drawable/botones_comunidad"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    app:backgroundTint="@null"
+                    android:fontFamily="@font/dangrek"/>
+
+            </LinearLayout>
+
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
                 android:animateLayoutChanges="true"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="4dp"
@@ -124,6 +132,8 @@
                 android:layout_height="wrap_content"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
@@ -190,6 +200,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
                 app:cardCornerRadius="20dp"
@@ -258,6 +270,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
                 app:cardCornerRadius="20dp"
@@ -353,6 +367,8 @@
                 android:layout_height="wrap_content"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
@@ -422,6 +438,8 @@
                 android:layout_height="wrap_content"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
@@ -491,6 +509,8 @@
                 android:layout_height="wrap_content"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
@@ -560,6 +580,8 @@
                 android:layout_height="wrap_content"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true">
@@ -627,6 +649,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
                 app:cardCornerRadius="20dp"
@@ -696,6 +720,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
                 app:cardCornerRadius="20dp"
@@ -765,6 +791,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
                 app:cardCornerRadius="20dp"
@@ -836,6 +864,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:animateLayoutChanges="true"
                 app:cardCornerRadius="20dp"
