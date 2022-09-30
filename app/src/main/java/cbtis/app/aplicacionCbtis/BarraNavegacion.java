@@ -10,7 +10,7 @@ import cbtis.app.aplicacionCbtis.databinding.ActivityBarraNavegacionBinding;
 import cbtis.app.aplicacionCbtis.ui.comunidad.ComunidadFragment;
 import cbtis.app.aplicacionCbtis.ui.configuraciones.ConfiguracionesFragment;
 import cbtis.app.aplicacionCbtis.ui.home.HogarFragment;
-import cbtis.app.aplicacionCbtis.ui.noticias.NoticiasFragment;
+import cbtis.app.aplicacionCbtis.ui.cursos.CursosFragment;
 
 public class BarraNavegacion extends AppCompatActivity {
 
@@ -32,8 +32,8 @@ public class BarraNavegacion extends AppCompatActivity {
                 case R.id.comunidad:
                     remplazarFragment(new ComunidadFragment());
                     break;
-                case R.id.noticias:
-                    remplazarFragment(new NoticiasFragment());
+                case R.id.cursos:
+                    remplazarFragment(new CursosFragment());
                     break;
                 case R.id.configuraciones:
                     remplazarFragment(new ConfiguracionesFragment());

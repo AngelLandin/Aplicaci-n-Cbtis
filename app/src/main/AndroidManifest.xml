@@ -11,10 +11,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProjectoAplicacionCbtis"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:name=".BotonesDeRegistro"
             android:exported="true"
             android:screenOrientation="portrait">
@@ -26,12 +25,10 @@
 
         </activity>
         <activity
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:name=".Registro"
             android:exported="true"
             android:screenOrientation="portrait"/>
         <activity
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:name=".IniciarSesión"
             android:exported="true"
             android:screenOrientation="portrait"/>
