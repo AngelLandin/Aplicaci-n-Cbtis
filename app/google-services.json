@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "833192894595",
+    "project_id": "app-cb-ba8d4",
+    "storage_bucket": "app-cb-ba8d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833192894595:android:c26477975bf7a5c2ebbbb6",
+        "android_client_info": {
+          "package_name": "cbtis.app.aplicacionCbtis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833192894595-b55joqtot8pdddv1gc7081vsc1pf7efc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-lp5NuwaIaIkwBBbH0X1reDvwGee2WZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833192894595-b55joqtot8pdddv1gc7081vsc1pf7efc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
