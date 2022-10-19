@@ -30,7 +30,7 @@
             android:fontFamily="@font/dynap"
             android:gravity="center"
             android:paddingTop="38dp"
-            android:text="@string/mesaje_de_inicio"
+            android:text="INGRESA A TU CUENTA"
             android:textColor="@color/white"
             android:textSize="35sp"
             tools:ignore="MissingConstraints" />
@@ -97,6 +97,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/campoEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -128,6 +129,7 @@
             app:startIconContentDescription="contraseña">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/campoContrasena"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"

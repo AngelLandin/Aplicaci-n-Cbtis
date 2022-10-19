@@ -6,30 +6,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TableLayout;
-
 import com.google.android.material.tabs.TabLayout;
-
-import cbtis.app.aplicacionCbtis.PrincipalFragment;
 import cbtis.app.aplicacionCbtis.R;
-import cbtis.app.aplicacionCbtis.databinding.FragmentCursosBinding;
-import cbtis.app.aplicacionCbtis.ui.comunidad.ComunidadFragment;
-import cbtis.app.aplicacionCbtis.ui.configuraciones.ConfiguracionesFragment;
 import cbtis.app.aplicacionCbtis.ui.cursos.controlador.PagerController;
-import cbtis.app.aplicacionCbtis.ui.home.HogarFragment;
 
 
 public class CursosFragment extends Fragment {
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
     PagerController pagerAdapter;
-    FragmentManager fragmentManager;
 
     public CursosFragment() {
     }

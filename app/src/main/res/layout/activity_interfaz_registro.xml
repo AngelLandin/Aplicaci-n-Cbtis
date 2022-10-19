@@ -73,7 +73,7 @@
             android:fontFamily="@font/sans_pro"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="45sp"
+            android:textSize="50sp"
             android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -81,38 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="15dp"
-            android:hint="Nombre"
-            android:textColorHint="@color/black"
-            app:hintTextColor="@color/black"
-            app:boxStrokeColor="@color/black"
-            app:boxBackgroundColor="@color/white"
-            app:helperText="Ingrese un nombre de usuario"
-            app:helperTextTextColor="@color/red"
-            app:endIconMode="clear_text"
-            app:endIconTint="@color/black"
-            app:startIconDrawable="@drawable/ic_persona_registro"
-            app:startIconTint="@color/black"
-            >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/black"
-                android:inputType="textCapWords"
-                android:textColor="@color/black"/>
-
-
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="15dp"
             app:startIconDrawable="@drawable/ic_email"
             app:startIconTint="@color/black"
@@ -129,6 +98,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -142,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="30dp"
             android:hint="Contraseña"
             android:textColorHint="@color/black"
             app:hintTextColor="@color/black"
@@ -160,6 +130,7 @@
             app:startIconTint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contrasena"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -172,7 +143,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:hint="Confirmar contraseña"
             android:textColorHint="@color/black"
             app:hintTextColor="@color/black"
@@ -190,6 +161,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmar_contrasena"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -204,7 +176,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/style_button"
             android:text="@string/btn_continuar"
             android:fontFamily="@font/sans_pro"

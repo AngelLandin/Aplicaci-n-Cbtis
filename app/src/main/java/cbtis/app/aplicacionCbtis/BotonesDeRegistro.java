@@ -11,31 +11,39 @@ import cbtis.app.aplicacionCbtis.databinding.ActivityBotonesDeRegistroBinding;
 
 public class BotonesDeRegistro extends AppCompatActivity {
     private ActivityBotonesDeRegistroBinding binding;
+    private Button btnIniciarSesion;
+    private Button btnRegistrarse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityBotonesDeRegistroBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        btnIniciarSesion = binding.btnIniciarSesion;
+        btnRegistrarse = binding.btnregistrarse;
 
-
-        Intent btnRegistrarse = new Intent(BotonesDeRegistro.this, Registro.class);
-        Intent bttIniciarSesión = new Intent( BotonesDeRegistro.this, IniciarSesión.class);
-
-        binding.btnregistrarse.setOnClickListener(new View.OnClickListener() {
+        btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                startActivity(btnRegistrarse);
+                iniciarSesion(view);
             }
         });
 
-        binding.btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
+        btnRegistrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(bttIniciarSesión);
+                registrarse(view);
             }
         });
+    }
 
+    public void iniciarSesion(View view){
+        Intent inicioSesion = new Intent(getApplicationContext(), IniciarSesión.class);
+        startActivity(inicioSesion);
+    }
+
+    public void registrarse(View view){
+        Intent registro = new Intent(getApplicationContext(), Registro.class);
+        startActivity(registro);
     }
 }

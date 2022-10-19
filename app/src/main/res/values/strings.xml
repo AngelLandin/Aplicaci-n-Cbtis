@@ -6,7 +6,7 @@
     <string name="password">Contraseña</string>
     <string name="mail">Email</string>
     <string name="btn_continuar">Continuar</string>
-    <string name="mesaje_de_inicio">Ingresa a tu cuenta</string>
+    <string name="mesaje_de_inicio">Ingresa y enterate de lo que pasa en tu institución</string>
     <string name="mensaje_crear_cuenta">¿Eres nuevo por aquí?</string>
 
     <string name="titulo_notificaciones">Notificaciones</string>

@@ -11,16 +11,15 @@
 
 
     <TextView
-        android:layout_width="382dp"
-        android:layout_height="506dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="125dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/dynap"
         android:gravity="center"
-        android:paddingTop="38dp"
+        android:layout_margin="40dp"
+        android:paddingTop="70dp"
         android:text="@string/mesaje_de_inicio"
         android:textColor="@color/white"
-        android:textSize="29sp"
+        android:textSize="40sp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -28,10 +27,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/color_boton_iniciar_sesion"
-        android:fontFamily="@font/sans_pro"
+        android:fontFamily="@font/kanit_bold"
         android:text="iniciar sesion"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -46,7 +45,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/color_boton_iniciar_sesion"
-        android:fontFamily="@font/sans_pro"
+        android:fontFamily="@font/kanit_bold"
         android:text="registrarse"
         android:textColor="@color/white"
         android:textSize="20dp"
