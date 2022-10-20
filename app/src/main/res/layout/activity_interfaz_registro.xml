@@ -93,6 +93,8 @@
             app:hintTextColor="@color/black"
             app:endIconMode="clear_text"
             app:endIconTint="@color/black"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
             app:helperText="*Ingrese su email"
             app:helperTextTextColor="@color/red"
             >

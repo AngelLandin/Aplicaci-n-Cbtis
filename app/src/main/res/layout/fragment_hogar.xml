@@ -23,7 +23,7 @@
             android:layout_gravity="center"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/chika_fujiwara"
+            android:src="@drawable/logocbtis"
             android:background="#6effff"
             />
     </LinearLayout>
@@ -34,10 +34,15 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <WebView
-            android:id="@+id/webview"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:text="Sección de Avisos"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
 
     </LinearLayout>
 </LinearLayout>

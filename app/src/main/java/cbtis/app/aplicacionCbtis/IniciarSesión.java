@@ -41,7 +41,15 @@ public class IniciarSesión extends AppCompatActivity {
         binding.btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                iniciarSesion(view);
+                if(email.getText().toString().isEmpty()){
+                    Toast.makeText(getApplicationContext(), "Ingrese un email", Toast.LENGTH_LONG).show();
+                }
+                if(contrasena.getText().toString().isEmpty()){
+                    Toast.makeText(getApplicationContext(), "Ingrese su contraseña", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    iniciarSesion(view);
+                }
             }
         });
     }

@@ -93,6 +93,8 @@
             app:endIconMode="clear_text"
             app:endIconTint="@color/black"
             app:helperText="*Ingrese su email"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
             app:helperTextTextColor="@color/red"
             >
 
@@ -126,6 +128,8 @@
             app:helperTextTextColor="@color/red"
             app:startIconDrawable="@drawable/ic_baseline_lock_24"
             app:startIconTint="@color/black"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
             app:startIconContentDescription="contraseña">
 
             <com.google.android.material.textfield.TextInputEditText

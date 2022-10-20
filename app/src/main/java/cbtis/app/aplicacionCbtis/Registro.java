@@ -42,7 +42,12 @@ public class Registro extends AppCompatActivity {
         binding.btnContinuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                registrarUsuario(view);
+                if(email.getText().toString().isEmpty()){
+                    Toast.makeText(getApplicationContext(), "Ingrese un email", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    registrarUsuario(view);
+                }
             }
         });
     }

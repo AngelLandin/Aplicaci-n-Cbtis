@@ -3,15 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.cursos.controlador.CursosFragment">
+    tools:context=".ui.cursos.controlador.CursosFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Cursos XD"
-        android:textSize="40sp"
-        android:textAlignment="center"
-        android:gravity="center"/>
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="893dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Sección donde iran los cursos."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

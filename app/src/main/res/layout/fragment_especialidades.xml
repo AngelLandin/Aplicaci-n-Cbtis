@@ -70,7 +70,6 @@
                         android:layout_height="200dp"
                         android:layout_gravity="center_horizontal"
                         android:adjustViewBounds="true"
-                        android:foregroundGravity="center"
                         android:scaleType="centerCrop"
                         android:src="@drawable/contabilidad"/>
 
@@ -153,7 +152,7 @@
                         android:adjustViewBounds="true"
                         android:foregroundGravity="center"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/contabilidad"/>
+                        android:src="@drawable/clinico"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -226,7 +225,7 @@
                         android:adjustViewBounds="true"
                         android:foregroundGravity="center"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/contabilidad"/>
+                        android:src="@drawable/ofimatica"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -287,7 +286,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/kanit_bold"
-                        android:text="CONTABILIDAD"
+                        android:text="MECÁNICA INDUSTRIAL"
                         android:textAlignment="center"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
@@ -301,7 +300,7 @@
                         android:adjustViewBounds="true"
                         android:foregroundGravity="center"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/contabilidad"/>
+                        android:src="@drawable/mecanica"/>
 
                     <TextView
                         android:layout_width="wrap_content"
