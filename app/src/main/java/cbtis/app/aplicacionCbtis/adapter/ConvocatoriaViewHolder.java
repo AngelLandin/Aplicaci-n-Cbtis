@@ -1,2 +1,4 @@
-package cbtis.app.aplicacionCbtis.adapter;public class ConvocatoriaViewHolder {
+package cbtis.app.aplicacionCbtis.adapter;
+
+public class ConvocatoriaViewHolder {
 }

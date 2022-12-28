@@ -21,13 +21,13 @@ public class BarraNavegacion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityBarraNavegacionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        remplazarFragment(new cbtis.app.aplicacionCbtis.PrincipalFragment());
+        remplazarFragment(new cbtis.app.aplicacionCbtis.ui.principal.ConvocatoriasFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId()){
                 case R.id.principal:
-                    remplazarFragment(new cbtis.app.aplicacionCbtis.PrincipalFragment());
+                    remplazarFragment(new cbtis.app.aplicacionCbtis.ui.principal.ConvocatoriasFragment());
                     break;
                 case R.id.comunidad:
                     remplazarFragment(new ComunidadFragment());
@@ -46,6 +46,8 @@ public class BarraNavegacion extends AppCompatActivity {
         });
     }
 
+    //La funcionalidad del método es que al momento de presionar uno de los iconos de la parte superior
+    //de la pantalla principal, sea remplazado por dicho fragment que contiene ese icono
     private void remplazarFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

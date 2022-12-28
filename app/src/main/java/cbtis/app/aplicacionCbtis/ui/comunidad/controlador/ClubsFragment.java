@@ -17,7 +17,6 @@ public class ClubsFragment extends Fragment {
         // Required empty public constructor
     }
 
-    // TODO: Rename and change types and number of parameters
     public static ClubsFragment newInstance(String param1, String param2) {
         ClubsFragment fragment = new ClubsFragment();
         return fragment;
