@@ -16,15 +16,11 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_cursos"
                 android:layout_width="match_parent"
-                android:layout_height="893dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Sección donde iran los cursos."
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="40sp" />
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 

@@ -1,6 +1,5 @@
-package cbtis.app.aplicacionCbtis.ui.principal;
+package cbtis.app.aplicacionCbtis.ui.convocatorias;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
