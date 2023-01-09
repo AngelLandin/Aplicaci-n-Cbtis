@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Orgullo DGETI</string>
+    <string name="app_name">CB Vlog</string>
     <string name="icono_persona">Icono persona</string>
     <string name="login">INICIAR SESIÓN</string>
     <string name="mensaje_cuenta">Registrarse</string>
@@ -9,7 +9,7 @@
     <string name="mesaje_de_inicio">Ingresa y enterate de lo que pasa en tu institución</string>
     <string name="mensaje_crear_cuenta">¿Eres nuevo por aquí?</string>
 
-    <string name="titulo_notificaciones">Notificaciones</string>
+    <string name="titulo_convocatorias">Convocatorias</string>
     <string name="titulo_cursos">Cursos</string>
     <string name="titulo_configuraciones">Configuraciones</string>
     <string name="titulo_hogar">Hogar</string>

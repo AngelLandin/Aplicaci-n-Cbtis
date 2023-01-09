@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/principal"
-        android:title="@string/titulo_notificaciones"
+        android:title="@string/titulo_convocatorias"
         android:icon="@drawable/notificaciones"
         android:iconTint="@color/black"
         />

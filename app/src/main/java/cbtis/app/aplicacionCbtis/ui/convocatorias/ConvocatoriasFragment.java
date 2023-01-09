@@ -1,5 +1,7 @@
 package cbtis.app.aplicacionCbtis.ui.convocatorias;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -16,10 +18,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cbtis.app.aplicacionCbtis.R;
-import cbtis.app.aplicacionCbtis.adapter.ListAdapter;
-import cbtis.app.aplicacionCbtis.adapter.ListElement;
 
-public class ConvocatoriasFragment extends Fragment {
+import cbtis.app.aplicacionCbtis.ui.convocatorias.adapter.ListAdapter;
+import cbtis.app.aplicacionCbtis.ui.convocatorias.adapter.ListElement;
+
+public class ConvocatoriasFragment extends Fragment implements RecyclerViewInterfaceConvocatorias {
 
     List<ListElement> elementos;
 
@@ -46,13 +49,20 @@ public class ConvocatoriasFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         elementos = new ArrayList<>();
-        elementos.add(new ListElement("BBVA", "ESTA BECA ES DE PRUEBA XDDDDDDD SI"));
-        elementos.add(new ListElement("JUVENTUES", "BECA PARA ESTUDIAR EN LA UG TODO PAGADO SI XD"));
+        elementos.add(new ListElement("SANTANDER", "Santander Scholarships Language | UK English Summer Experience 2023", "Si quieres pasar tres semanas en un campus universitario británico este verano, Banco Santander, en colaboración con British Council, ofrece 100 becas", "https://app.becas-santander.com/es/program/santander-scholarships-language-uk-english-summer-experience-2023"));
+        elementos.add(new ListElement("Tecnológico de Monterrey", "Lideres del mañana", "Es un programa de movilidad social para formar líderes talentosos y sensibles que impacten positivamente a la comunidad, y que requieren apoyo financiero del 100 % para estudiar una carrera profesional en el Tec de Monterrey.", "https://lideresdelmanana.itesm.mx/"));
 
-        ListAdapter listAdapter = new ListAdapter(elementos, getContext());
+        ListAdapter listAdapter = new ListAdapter(elementos, getContext(), this);
         RecyclerView recyclerView = view.findViewById(R.id.recycler_convocatorias);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(listAdapter);
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        String urlConvocatoria = elementos.get(position).getUrlConvocatoria();
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlConvocatoria));
+        startActivity(intent);
     }
 }
