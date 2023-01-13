@@ -13,4 +13,6 @@
     <color name="red">#FF0000</color>
     <color name="red_orange">#80ed99</color>
     <color name="light_blue">#00b4ff</color>
+
+    <color name="colorSplash">#000000</color>
 </resources>
