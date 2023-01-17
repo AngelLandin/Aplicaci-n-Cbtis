@@ -22,7 +22,7 @@ public class BarraNavegacion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityBarraNavegacionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        remplazarFragment(new cbtis.app.aplicacionCbtis.ui.convocatorias.ConvocatoriasFragment());
+        remplazarFragment(new cbtis.app.aplicacionCbtis.ui.home.HogarFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 

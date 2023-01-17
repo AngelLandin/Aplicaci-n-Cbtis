@@ -36,16 +36,16 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
 
     @Override
     public ListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
-        View view = mInflater.inflate(R.layout.card_cursos, null);
+        View view = this.mInflater.inflate(R.layout.card_cursos, null);
         return new ListAdapter.ViewHolder(view, recyclerViewInterfaceCursos);
     }
 
     @Override
     public void onBindViewHolder(final ListAdapter.ViewHolder holder, final int position){
-        holder.bindData(cardData.get(position));
+        holder.bindData(this.cardData.get(position));
     }
 
-    public void setItems(List<ListElementCursos> items) { cardData = items; }
+    public void setItems(List<ListElementCursos> items) { this.cardData = items; }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         ImageView imageCurso;
@@ -54,11 +54,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
 
         ViewHolder(View itemView, RecyclerViewInterfaceCursos recyclerViewInterfaceCursos){
             super(itemView);
-            tituloCurso = itemView.findViewById(R.id.titulo_curso);
-            asociacion = itemView.findViewById(R.id.asociacion_curso);
-            descripcionCurso = itemView.findViewById(R.id.descripcion_curso);
-            urlCurso = itemView.findViewById(R.id.cardCurso);
-            imageCurso = itemView.findViewById(R.id.image_curso);
+            this.tituloCurso = itemView.findViewById(R.id.titulo_curso);
+            this.asociacion = itemView.findViewById(R.id.asociacion_curso);
+            this.descripcionCurso = itemView.findViewById(R.id.descripcion_curso);
+            this.urlCurso = itemView.findViewById(R.id.cardCurso);
+            this.imageCurso = itemView.findViewById(R.id.image_curso);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -76,10 +76,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
         }
 
         void bindData(final ListElementCursos item){
-            imageCurso.setImageResource(item.getImage());
-            tituloCurso.setText(item.getTituloCurso());
-            asociacion.setText(item.getAsociacion());
-            descripcionCurso.setText(item.getDescripcion());
+            this.imageCurso.setImageResource(item.getImage());
+            this.tituloCurso.setText(item.getTituloCurso());
+            this.asociacion.setText(item.getAsociacion());
+            this.descripcionCurso.setText(item.getDescripcion());
         }
     }
 }

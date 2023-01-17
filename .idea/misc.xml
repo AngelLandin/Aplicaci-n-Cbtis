@@ -20,6 +20,13 @@
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/drawable/style_button.xml" value="0.1385" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_barra_navegacion.xml" value="0.25" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_botones_de_registro.xml" value="0.25" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_cuadernillos_cuarto_sactivity.xml" value="0.16417272338606242" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_cuadernillos_primer_sactivity.xml" value="0.16417272338606242" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_cuadernillos_quinto_sactivity.xml" value="0.16417272338606242" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_cuadernillos_segundo_sactivity.xml" value="0.16417272338606242" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_cuadernillos_sexto_sactivity.xml" value="0.16417272338606242" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_cuadernillos_tercer_sactivity.xml" value="0.16417272338606242" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_cuardernillos1.xml" value="0.16417272338606242" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.25" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_interfaz_registro.xml" value="0.22" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_main.xml" value="0.22" />
@@ -28,6 +35,7 @@
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/barra_navegacion.xml" value="0.2" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/botones_de_registros.xml" value="0.25" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/card_convocatoria.xml" value="0.25" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/card_cuadernillos.xml" value="0.22" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/card_cursos.xml" value="0.33" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/crear_cuenta.xml" value="0.2" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_clubs.xml" value="0.22" />

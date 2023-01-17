@@ -49,19 +49,19 @@ public class CursosFragment extends Fragment implements RecyclerViewInterfaceCur
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        listaElemento = new ArrayList<>();
-        listaElemento.add(new ListElementCursos(R.drawable.cursoderivadas, "Bases Matemáticas: Derivadas", "EDX Course", "Curso básico sobre funciones y sus derivadas, incluyendo sus aplicaciones a la resolución de problemas.", "https://www.edx.org/course/bases-matematicas-derivadas?index=product_value_experiment_a&queryID=b870d44622b23b65e47f618d2f1c90e1&position=4"));
-        listaElemento.add(new ListElementCursos(R.drawable.algebra, "Álgebra 1", "Khan Academy", "Curso de álgebra que abarca los temas de ecuaciones lineales, desigualdades, funciones y gráficas.", "https://es.khanacademy.org/math/algebra"));
-        listaElemento.add(new ListElementCursos(R.drawable.algebra2, "Álgebra 2", "Khan Academy", "Curso de álgebra 2 que cubre polinomios, números complejos, exponentes racionales, funciones exponenciales y logarítmicas.", "https://es.khanacademy.org/math/algebra2"));
-        listaElemento.add(new ListElementCursos(R.drawable.inglesbasic, "Inglés para todos: nivel básico", "EDX", "English for everyone: basics es un curso URosarioX  enfocado en el aprendizaje de inglés desde las expresiones y estructuras más básicas.", "https://www.edx.org/es/course/ingles-para-todos-nivel-basico?index=spanish_product&queryID=5a2f9b5b46defecee8366c178122b812&position=1"));
-        listaElemento.add(new ListElementCursos(R.drawable.geometriaytrigonometria, "Geometría y Trigonometria", "Teachlr", "ADQUIRIR CONOCIMIENTOS BÁSICOS Y PRÁCTICOS DE GEOMETRÍA Y TRIGONOMETRIA.", "https://teachlr.com/cursos-online/geometria-y-trigonometria/"));
-        listaElemento.add(new ListElementCursos(R.drawable.calculodiferencias, "Cálculo diferencial", "Khan Academy", " El cálculo diferencial se ocupa del estudio de las razones a las cuales cambian ciertas cantidades, y es una de las dos áreas principales del cálculo (la otra es el cálculo integral).", "https://es.khanacademy.org/math/differential-calculus"));
-        listaElemento.add(new ListElementCursos(R.drawable.calculointegral, "Cálculo integral", "Khan Academy", "Aprende cálculo integral: Integrales indefinidas, sumas de Riemann, integrales definidas, problemas de aplicación y mucho más.", "https://es.khanacademy.org/math/integral-calculus"));
-        listaElemento.add(new ListElementCursos(R.drawable.cursopython, "Automatización de TI de Google con Python", "Coursera", "Aprenda habilidades en demanda como Python, Git y automatización de TI para avanzar en su carrera", "https://www.coursera.org/professional-certificates/google-it-automation"));
+        this.listaElemento = new ArrayList<>();
+        this.listaElemento.add(new ListElementCursos(R.drawable.cursoderivadas, "Bases Matemáticas: Derivadas", "EDX Course", "Curso básico sobre funciones y sus derivadas, incluyendo sus aplicaciones a la resolución de problemas.", "https://www.edx.org/course/bases-matematicas-derivadas?index=product_value_experiment_a&queryID=b870d44622b23b65e47f618d2f1c90e1&position=4"));
+        this.listaElemento.add(new ListElementCursos(R.drawable.algebra1, "Álgebra 1", "Khan Academy", "Curso de álgebra que abarca los temas de ecuaciones lineales, desigualdades, funciones y gráficas.", "https://es.khanacademy.org/math/algebra"));
+        this.listaElemento.add(new ListElementCursos(R.drawable.algebra, "Álgebra 2", "Khan Academy", "Curso de álgebra 2 que cubre polinomios, números complejos, exponentes racionales, funciones exponenciales y logarítmicas.", "https://es.khanacademy.org/math/algebra2"));
+        this.listaElemento.add(new ListElementCursos(R.drawable.inglesbasic, "Inglés para todos: nivel básico", "EDX", "English for everyone: basics es un curso URosarioX  enfocado en el aprendizaje de inglés desde las expresiones y estructuras más básicas.", "https://www.edx.org/es/course/ingles-para-todos-nivel-basico?index=spanish_product&queryID=5a2f9b5b46defecee8366c178122b812&position=1"));
+        this.listaElemento.add(new ListElementCursos(R.drawable.geometriaytrigonometria, "Geometría y Trigonometria", "Teachlr", "ADQUIRIR CONOCIMIENTOS BÁSICOS Y PRÁCTICOS DE GEOMETRÍA Y TRIGONOMETRIA.", "https://teachlr.com/cursos-online/geometria-y-trigonometria/"));
+        this.listaElemento.add(new ListElementCursos(R.drawable.calculodiferencias, "Cálculo diferencial", "Khan Academy", " El cálculo diferencial se ocupa del estudio de las razones a las cuales cambian ciertas cantidades, y es una de las dos áreas principales del cálculo (la otra es el cálculo integral).", "https://es.khanacademy.org/math/differential-calculus"));
+        this.listaElemento.add(new ListElementCursos(R.drawable.calculointegral, "Cálculo integral", "Khan Academy", "Aprende cálculo integral: Integrales indefinidas, sumas de Riemann, integrales definidas, problemas de aplicación y mucho más.", "https://es.khanacademy.org/math/integral-calculus"));
+        this.listaElemento.add(new ListElementCursos(R.drawable.cursopython, "Automatización de TI de Google con Python", "Coursera", "Aprenda habilidades en demanda como Python, Git y automatización de TI para avanzar en su carrera", "https://www.coursera.org/professional-certificates/google-it-automation"));
 
 
 
-        ListAdapter listAdapter = new ListAdapter(listaElemento, getContext(), this);
+        ListAdapter listAdapter = new ListAdapter(this.listaElemento, getContext(), this);
         RecyclerView recyclerView = view.findViewById(R.id.recycler_cursos);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -71,7 +71,7 @@ public class CursosFragment extends Fragment implements RecyclerViewInterfaceCur
 
     @Override
     public void onItemClick(int position) {
-        String urlCurso = listaElemento.get(position).getUrlCurso();
+        String urlCurso = this.listaElemento.get(position).getUrlCurso();
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlCurso));
         startActivity(intent);
     }

@@ -17,20 +17,36 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".ui.cursos.cuadernillos.CuadernillosSextoSActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.cursos.cuadernillos.CuadernillosQuintoSActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.cursos.cuadernillos.CuadernillosCuartoSActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.cursos.cuadernillos.CuadernillosTercerSActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.cursos.cuadernillos.CuadernillosSegundoSActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.cursos.cuadernillos.CuadernillosPrimerSActivity"
+            android:exported="true" />
+        <activity
             android:name=".Actividades.SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".BotonesDeRegistro"
             android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Registro"
             android:exported="true"
