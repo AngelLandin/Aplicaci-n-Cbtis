@@ -7,7 +7,7 @@
     android:gravity="fill_vertical"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".IniciarSesión">
+    tools:context=".IniciarSesion">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

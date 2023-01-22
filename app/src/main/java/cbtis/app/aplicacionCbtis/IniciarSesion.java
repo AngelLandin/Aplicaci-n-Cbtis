@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -18,7 +17,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import cbtis.app.aplicacionCbtis.databinding.ActivityIniciarSesionBinding;
 
-public class IniciarSesión extends AppCompatActivity {
+public class IniciarSesion extends AppCompatActivity {
 
     private ActivityIniciarSesionBinding binding;
     private TextInputEditText email;
@@ -36,7 +35,7 @@ public class IniciarSesión extends AppCompatActivity {
         contrasena = binding.campoContrasena;
         mAuth = FirebaseAuth.getInstance();//Obtenemos una instacia de FireBase
 
-        Intent intent = new Intent(IniciarSesión.this, BarraNavegacion.class);
+        Intent intent = new Intent(IniciarSesion.this, BarraNavegacion.class);
 
         binding.btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
