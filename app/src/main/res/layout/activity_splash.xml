@@ -9,7 +9,7 @@
 
     <ImageView
         android:layout_width="273dp"
-        android:layout_height="621dp"
+        android:layout_height="620dp"
         android:src="@drawable/logocbtis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

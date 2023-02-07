@@ -3,8 +3,10 @@ package cbtis.app.aplicacionCbtis;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -22,7 +24,9 @@ public class IniciarSesion extends AppCompatActivity {
     private ActivityIniciarSesionBinding binding;
     private TextInputEditText email;
     private TextInputEditText contrasena;
-    private FirebaseAuth mAuth;
+    private FirebaseAuth firebaseAuth;
+    private Context context;
+    private FirebaseAuth.AuthStateListener authStateListener;
 
 
     @Override
@@ -31,9 +35,11 @@ public class IniciarSesion extends AppCompatActivity {
         binding = ActivityIniciarSesionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        this.context = getApplicationContext();
+
         email = binding.campoEmail;
         contrasena = binding.campoContrasena;
-        mAuth = FirebaseAuth.getInstance();//Obtenemos una instacia de FireBase
+        firebaseAuth = FirebaseAuth.getInstance();//Obtenemos una instacia de FireBase
 
         Intent intent = new Intent(IniciarSesion.this, BarraNavegacion.class);
 
@@ -57,21 +63,22 @@ public class IniciarSesion extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
+        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
     }
 
     //Método para iniciar Sesion un usuario
     public void iniciarSesion(View view){
-        mAuth.signInWithEmailAndPassword(email.getText().toString().trim(), contrasena.getText().toString())
+        firebaseAuth.signInWithEmailAndPassword(email.getText().toString().trim(), contrasena.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            FirebaseUser user = mAuth.getCurrentUser();
+                            FirebaseUser user = firebaseAuth.getCurrentUser();
                             Toast.makeText(getApplicationContext(), "Auntenticación correcta", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(), BarraNavegacion.class);
                             startActivity(intent);
+                            finish();
                             //updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
@@ -81,4 +88,5 @@ public class IniciarSesion extends AppCompatActivity {
                     }
                 });
     }
+
 }
