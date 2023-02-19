@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/sans_pro"
-                android:text="El jafet se la come"
+                android:text="Diseño de prueba "
                 android:textAlignment="center"
                 android:layout_gravity="center"
                 android:gravity="center"

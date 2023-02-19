@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Escuela Activa</string>
+    <string name="app_name">Escuela Activa II</string>
     <string name="icono_persona">Icono persona</string>
     <string name="login">INICIAR SESIÓN</string>
     <string name="mensaje_cuenta">Registrarse</string>
@@ -11,7 +11,7 @@
 
     <string name="titulo_convocatorias">Convocatorias</string>
     <string name="titulo_cursos">Cursos</string>
-    <string name="titulo_configuraciones">Configuraciones</string>
+    <string name="titulo_ajustes">Ajustes</string>
     <string name="titulo_hogar">Hogar</string>
     <string name="titulo_comunidad">Comunidad</string>
     <!-- TODO: Remove or change this placeholder text -->

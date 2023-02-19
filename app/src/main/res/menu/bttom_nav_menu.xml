@@ -32,7 +32,7 @@
 
     <item
         android:id="@+id/configuraciones"
-        android:title="@string/titulo_configuraciones"
+        android:title="@string/titulo_ajustes"
         android:icon="@drawable/configuraciones"
         android:iconTint="@color/black"
         />
