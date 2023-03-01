@@ -8,41 +8,19 @@
     android:background="@color/white"
     tools:context=".ui.home.HogarFragment">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="#6effff"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:text="Hola Alumno."
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
 
-        <ImageButton
-            android:id="@+id/perfil_imagen"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginBottom="50dp"
-            android:layout_gravity="center"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/logocbtis"
-            android:background="#6effff"
-            />
-    </LinearLayout>
-
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_avisos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Sección de Avisos"
-            android:textSize="40sp"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:gravity="center"
-            />
-
-    </LinearLayout>
 </LinearLayout>

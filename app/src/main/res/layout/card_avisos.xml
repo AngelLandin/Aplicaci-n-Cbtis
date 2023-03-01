@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_avisos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/descripcion_aviso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion del aviso importante"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/fecha_aviso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 de marzo del 2023"
+                    android:textSize="10dp"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/image_avisos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/algebra"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:foregroundGravity="center"
+                android:layout_marginBottom="10dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
