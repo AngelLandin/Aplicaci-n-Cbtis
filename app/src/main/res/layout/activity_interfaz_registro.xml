@@ -23,16 +23,20 @@
             tools:layout_editor_absoluteY="-1dp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="125dp"
+            android:id="@+id/textView2"
+            android:layout_width="258dp"
+            android:layout_height="134dp"
             android:fontFamily="@font/dynap"
             android:gravity="center"
-            android:paddingTop="38dp"
             android:text="@string/mensaje_crear_cuenta"
             android:textColor="@color/white"
             android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintVertical_bias="0.362"
             tools:ignore="MissingConstraints" />
 
         <ImageView
@@ -41,10 +45,12 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/icono_persona"
             android:orientation="vertical"
-            android:paddingStart="280dp"
-            android:paddingTop="29dp"
-            android:paddingEnd="0dp"
             android:src="@drawable/ic_person"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.257"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

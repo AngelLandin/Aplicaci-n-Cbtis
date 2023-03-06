@@ -81,5 +81,6 @@ public class ConfiguracionesFragment extends Fragment  implements RecyclerViewIn
         this.firebaseAuth.signOut();
         startActivity(new Intent(getContext(), BotonesDeRegistro.class));
         Toast.makeText(getContext(), "Sesión Cerrada", Toast.LENGTH_LONG).show();
+        getActivity().finish();
     }
 }

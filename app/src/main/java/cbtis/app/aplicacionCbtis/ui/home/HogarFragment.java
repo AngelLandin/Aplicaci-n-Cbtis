@@ -81,7 +81,10 @@ public class HogarFragment extends Fragment implements RecyclerViewInterfaceAvis
 
         ListAdapter listAdapter = new ListAdapter(listaElementosAvisos, mContext, recyclerViewInterfaceAvisos);
         this.recyclerViewAvisos.setHasFixedSize(true);
-        this.recyclerViewAvisos.setLayoutManager(new LinearLayoutManager(getContext()));
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        linearLayoutManager.setReverseLayout(true);
+        linearLayoutManager.setStackFromEnd(true);
+        this.recyclerViewAvisos.setLayoutManager(linearLayoutManager);
         recyclerViewAvisos.setAdapter(listAdapter);
     }
 

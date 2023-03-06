@@ -23,28 +23,32 @@
             tools:layout_editor_absoluteY="-1dp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="125dp"
+            android:id="@+id/textView4"
+            android:layout_width="259dp"
+            android:layout_height="146dp"
             android:fontFamily="@font/dynap"
             android:gravity="center"
-            android:paddingTop="38dp"
             android:text="INGRESA A TU CUENTA"
             android:textColor="@color/white"
             android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
             tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="160dp"
+            android:layout_height="101dp"
             android:contentDescription="@string/icono_persona"
             android:orientation="vertical"
-            android:paddingStart="280dp"
-            android:paddingTop="29dp"
-            android:paddingEnd="0dp"
             android:src="@drawable/ic_person"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -56,105 +60,106 @@
         tools:ignore="MissingConstraints" />
 
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/texto_iniciar_sesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/sans_pro"
             android:letterSpacing="0.01"
             android:text="@string/login"
-            android:fontFamily="@font/sans_pro"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="45sp"
-            android:textStyle="bold" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="15dp"
-            android:hint="@string/mail"
-            android:textColorHint="@color/black"
-            app:boxStrokeColor="@color/black"
-            app:boxBackgroundColor="@color/white"
-            app:startIconDrawable="@drawable/ic_email"
-            app:startIconTint="@color/black"
-            app:startIconContentDescription="email"
-            app:hintTextColor="@color/black"
-            app:endIconMode="clear_text"
-            app:endIconTint="@color/black"
-            app:helperText="*Ingrese su email"
-            app:errorEnabled="true"
-            app:errorIconDrawable="@null"
-            app:helperTextTextColor="@color/red"
-            >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/campoEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:textColor="@color/black" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="25dp"
-            android:hint="@string/password"
-            android:textColorHint="@color/black"
-            app:hintTextColor="@color/black"
-            app:boxStrokeColor="@color/black"
-            app:boxBackgroundColor="@color/white"
-            app:counterEnabled="true"
-            app:counterMaxLength="30"
-            app:counterTextColor="@color/black"
-            app:endIconMode="password_toggle"
-            app:endIconTint="@color/black"
-            app:helperText="*Ingrese su contraseña"
-            app:helperTextTextColor="@color/red"
-            app:startIconDrawable="@drawable/ic_baseline_lock_24"
-            app:startIconTint="@color/black"
-            app:errorEnabled="true"
-            app:errorIconDrawable="@null"
-            app:startIconContentDescription="contraseña">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/campoContrasena"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:textColor="@color/black"/>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <Button
-            android:id="@+id/btnEntrar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/style_button"
-            android:text="@string/btn_continuar"
-            android:fontFamily="@font/sans_pro"
-            android:textSize="20dp"
-            android:textColor="@color/white"
             android:textStyle="bold"
-            app:backgroundTint="@null" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/mail"
+        android:textColorHint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/black"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:helperText="*Ingrese su email"
+        app:helperTextTextColor="@color/red"
+        app:hintTextColor="@color/black"
+        app:startIconContentDescription="email"
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campoEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:textColorHint="@color/black"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:counterTextColor="@color/black"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black"
+        app:helperText="*Ingrese su contraseña"
+        app:helperTextTextColor="@color/red"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/black"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:startIconContentDescription="contraseña">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campoContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/style_button"
+        android:text="@string/btn_continuar"
+        android:fontFamily="@font/sans_pro"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
 </LinearLayout>

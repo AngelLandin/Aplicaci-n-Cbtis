@@ -45,6 +45,7 @@ public class BotonesDeRegistro extends AppCompatActivity {
  void iniciarSesion(View view){
         Intent inicioSesion = new Intent(getApplicationContext(), IniciarSesion.class);
         startActivity(inicioSesion);
+        finish();
     }
 
     public void registrarse(View view){
