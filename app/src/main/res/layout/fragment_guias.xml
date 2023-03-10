@@ -6,11 +6,14 @@
     tools:context=".ui.cursos.controlador.GuiasFragment"
     android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_guias"
+    <ListView
+        android:id="@+id/ListView_guias"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+    </ListView>
 
-    </androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

@@ -27,12 +27,15 @@
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_cuadernillos_sexto_sactivity.xml" value="0.16417272338606242" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_cuadernillos_tercer_sactivity.xml" value="0.16417272338606242" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_cuardernillos1.xml" value="0.16417272338606242" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_guias_estudio.xml" value="0.1633176571184267" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_guias_estudio2.xml" value="0.16417272338606242" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.25" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_interfaz_registro.xml" value="0.22" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_menu_desplagable.xml" value="0.1633176571184267" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_ver_visor_pdfactivity.xml" value="0.16417272338606242" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_visor_guias_estudio.xml" value="0.16417272338606242" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_visor_p_d_f.xml" value="0.16417272338606242" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_visor_pdfactivity.xml" value="0.16417272338606242" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/activity_visor_pdfcuarto.xml" value="0.16417272338606242" />
@@ -59,8 +62,8 @@
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_especialidades.xml" value="0.25" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_guias.xml" value="0.2" />
-        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_hogar.xml" value="0.22" />
-        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_libros.xml" value="0.1" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_hogar.xml" value="0.33" />
+        <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_libros.xml" value="0.22" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_noticias.xml" value="0.2" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_notifications.xml" value="0.2" />
         <entry key="..\:/Proyectos Android Studios/ProjectoAplicacionCbtis/app/src/main/res/layout/fragment_principal.xml" value="0.2" />

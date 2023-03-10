@@ -16,6 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         tools:targetApi="31">
+
+        <activity
+            android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFGuiasEstudio"
+            android:exported="true"/>
+
         <activity
             android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFQuintoActivity"
             android:exported="true" />
