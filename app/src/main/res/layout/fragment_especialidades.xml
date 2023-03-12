@@ -19,24 +19,24 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="360dp"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                app:cardCornerRadius="100dp">
+                android:text="ESPECIALIDADES"
+                android:textAllCaps="true"
+                android:textSize="35sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/fontone"
+                android:letterSpacing="0.07"
+                />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Especialidades"
-                    android:background="@color/red_orange"
-                    android:textAlignment="center"
-                    android:textSize="40sp"
-                    android:textAllCaps="true"
-                    android:fontFamily="@font/kanit_bold"
-                    android:textColor="@color/black"/>
-            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/black"
+                />
+
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"

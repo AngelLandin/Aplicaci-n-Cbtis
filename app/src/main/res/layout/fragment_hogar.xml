@@ -11,11 +11,20 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hola Alumno."
+        android:text="Avisos"
         android:textAllCaps="true"
+        android:textSize="30sp"
         android:textAlignment="center"
-        android:textSize="25sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:fontFamily="@font/fontone"
+        android:letterSpacing="0.07"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_avisos"

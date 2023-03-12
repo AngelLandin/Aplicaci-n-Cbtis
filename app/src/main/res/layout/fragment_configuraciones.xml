@@ -25,11 +25,13 @@
                 android:layout_height="50dp"
                 android:text="Ajustes"
                 android:textAllCaps="true"
-                android:textSize="15sp"
+                android:textSize="25sp"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textColor="@color/white"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:fontFamily="@font/fontone"
+                android:letterSpacing="0.07"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="20dp"/>

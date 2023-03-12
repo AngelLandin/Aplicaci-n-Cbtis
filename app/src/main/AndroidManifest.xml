@@ -19,47 +19,61 @@
 
         <activity
             android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFGuiasEstudio"
-            android:exported="true"/>
+            android:exported="true"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFQuintoActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFCuartoActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFTercerActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFSegundoActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFSextoActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.CuadernillosSextoSActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.CuadernillosQuintoSActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.CuadernillosCuartoSActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.CuadernillosTercerSActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.CuadernillosSegundoSActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.cursos.cuadernillos.CuadernillosPrimerSActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Actividades.SplashActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

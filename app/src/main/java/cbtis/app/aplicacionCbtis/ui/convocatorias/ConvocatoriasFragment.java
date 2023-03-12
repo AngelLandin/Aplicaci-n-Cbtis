@@ -24,7 +24,7 @@ import cbtis.app.aplicacionCbtis.ui.convocatorias.adapter.ListElement;
 
 public class ConvocatoriasFragment extends Fragment implements RecyclerViewInterfaceConvocatorias {
 
-    List<ListElement> elementos;
+    private List<ListElement> elementos;
 
     public ConvocatoriasFragment() {
     }
