@@ -49,9 +49,13 @@ public class ConvocatoriasFragment extends Fragment implements RecyclerViewInter
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         elementos = new ArrayList<>();
-        elementos.add(new ListElement("SANTANDER", "Santander Scholarships Language | UK English Summer Experience 2023", "Si quieres pasar tres semanas en un campus universitario británico este verano, Banco Santander, en colaboración con British Council, ofrece 100 becas", "https://app.becas-santander.com/es/program/santander-scholarships-language-uk-english-summer-experience-2023"));
+        elementos.add(new ListElement("Becas Santander Tecnología", "Frontend by TecnoLochicas Pro", "El Programa “Becas Santander Tecnología | Frontend by TecnoLochicas Pro” es una iniciativa de Fundación Televisa, Microsoft y Grupo Santander, con el objetivo de dotar a las adolescentes con habilidades digitales y de empleabilidad. A través de enseñanza de programación", "https://app.becas-santander.com/es/program/becas-santander-tecnologia-frontend-by-tecnolochicas-pro?category=TECHstatus%3Dopen&track=search"));
         elementos.add(new ListElement("Tecnológico de Monterrey", "Lideres del mañana", "Es un programa de movilidad social para formar líderes talentosos y sensibles que impacten positivamente a la comunidad, y que requieren apoyo financiero del 100 % para estudiar una carrera profesional en el Tec de Monterrey.", "https://lideresdelmanana.itesm.mx/"));
         elementos.add(new ListElement("Santander", "Becas Santander Estudios | Fundación Fibra Educa (FEDUCA) 2023", "El Programa “Becas Santander – Estudios – Fundación Fibra Educa (FEDUCA) 2023” (en lo sucesivo “el Programa”) es una iniciativa de Fundación Fibra Educa", "https://app.becas-santander.com/es/program/becas-santander-estudios-fundacion-fibra-educa-feduca-2023?category=STUDIESstatus%3DopenoriginCountry%3DMX&track=search"));
+        elementos.add(new ListElement("Universidad de Monterrey", "Becas y Ayudas Financieras para Profesional", "¿Eres un alumno destacado, tienes talento, potencial y una trayectoria sobresaliente?\n" +
+                "\n" +
+                "¡Estudia con nosotros!\n" +
+                "En la UDEM contamos con opciones de becas y ayudas financieras para que curses tu carrera.", "https://www.udem.edu.mx/es/admisiones-y-becas/becas-y-apoyos-financieros-profesional"));
 
         ListAdapter listAdapter = new ListAdapter(elementos, getContext(), this);
         RecyclerView recyclerView = view.findViewById(R.id.recycler_convocatorias);

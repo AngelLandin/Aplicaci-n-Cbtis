@@ -22,11 +22,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
     private LayoutInflater mInflater;
     private Context context;
 
-    public ListAdapter(List<ListElement> itemList, Context context, RecyclerViewInterfaceConvocatorias recyclerViewInterfaceCursos){
+    public ListAdapter(List<ListElement> itemList, Context context, RecyclerViewInterfaceConvocatorias recyclerViewInterfaceConvocatorias){
         this.mInflater = LayoutInflater.from(context);
         this.context = context;
         this.cardData = itemList;
-        this.recyclerViewInterfaceConvocatorias = recyclerViewInterfaceCursos;
+        this.recyclerViewInterfaceConvocatorias = recyclerViewInterfaceConvocatorias;
     }
 
     @Override

@@ -1,6 +1,7 @@
 package cbtis.app.aplicacionCbtis.ui.configuraciones;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -58,8 +59,9 @@ public class ConfiguracionesFragment extends Fragment  implements RecyclerViewIn
         this.user = firebaseAuth.getCurrentUser();
 
         this.listaElementos = new ArrayList<>();
-        listaElementos.add(new ListaElementos(R.drawable.ic_persona, "Cerrar Sesión."));
-        listaElementos.add(new ListaElementos(R.drawable.ic_about, "Acerca de"));
+        listaElementos.add(new ListaElementos(R.drawable.ic_cerrarsesion, "Cerrar Sesión."));
+        listaElementos.add(new ListaElementos(R.drawable.ic_acercade, "Acerca de"));
+        listaElementos.add(new ListaElementos(R.drawable.ic_pagina_web, "Ir a la página oficial."));
 
         ListAdapter listAdapter = new ListAdapter(this.listaElementos, getContext(), this);
         RecyclerView recyclerView =view.findViewById(R.id.recycler_ajustes);
@@ -74,6 +76,11 @@ public class ConfiguracionesFragment extends Fragment  implements RecyclerViewIn
     public void onItemClick(int position) {
         if(position == 0){
             cerrarSesion();
+        }
+        if(position == 2){
+            String urlPaginaOficial = "https://www.cbtis238.edu.mx/";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlPaginaOficial));
+            startActivity(intent);
         }
     }
 
