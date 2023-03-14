@@ -74,6 +74,7 @@ public class Registro extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "Usuario creado",Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), BarraNavegacion.class);
                                 startActivity(intent);
+                                finish();
                                 //updateUI(user);
                             } else {
                                 // If sign in fails, display a message to the user.

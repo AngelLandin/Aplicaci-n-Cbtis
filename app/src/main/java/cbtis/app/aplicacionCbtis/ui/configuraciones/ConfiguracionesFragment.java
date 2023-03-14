@@ -60,9 +60,9 @@ public class ConfiguracionesFragment extends Fragment  implements RecyclerViewIn
 
         this.listaElementos = new ArrayList<>();
         listaElementos.add(new ListaElementos(R.drawable.ic_cerrarsesion, "Cerrar Sesión."));
-        listaElementos.add(new ListaElementos(R.drawable.ic_acercade, "Acerca de."));
         listaElementos.add(new ListaElementos(R.drawable.ic_pagina_web, "Ir a la página oficial."));
         listaElementos.add(new ListaElementos(R.drawable.ic_facebook, "Ir a la página oficial de facebook."));
+        listaElementos.add(new ListaElementos(R.drawable.ic_acercade, "Acerca de."));
 
         ListAdapter listAdapter = new ListAdapter(this.listaElementos, getContext(), this);
         RecyclerView recyclerView =view.findViewById(R.id.recycler_ajustes);
@@ -79,20 +79,21 @@ public class ConfiguracionesFragment extends Fragment  implements RecyclerViewIn
             cerrarSesion();
         }
 
-        if(position == 1){
-            Intent intent = new Intent(getContext(), AcercaDe.class);
-            startActivity(intent);
-        }
 
-        if(position == 2){
+        if(position == 1){
             String urlPaginaOficial = "https://www.cbtis238.edu.mx/";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlPaginaOficial));
             startActivity(intent);
         }
 
-        if(position == 3){
+        if(position == 2){
             String urlPaginaOficial = "https://web.facebook.com/somoscbtis238";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlPaginaOficial));
+            startActivity(intent);
+        }
+
+        if(position == 3){
+            Intent intent = new Intent(getContext(), AcercaDe.class);
             startActivity(intent);
         }
     }

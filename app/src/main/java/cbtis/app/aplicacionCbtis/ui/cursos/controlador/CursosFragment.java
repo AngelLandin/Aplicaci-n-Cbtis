@@ -76,6 +76,7 @@ public class CursosFragment extends Fragment implements RecyclerViewInterfaceCur
 
         this.listaElemento.add(new ListElementCursos(R.drawable.cursopython, "Automatización de TI de Google con Python", "Coursera", "Aprenda habilidades en demanda como Python, Git y automatización de TI para avanzar en su carrera", "https://www.coursera.org/professional-certificates/google-it-automation"));
 
+        this.listaElemento.add(new ListElementCursos(R.drawable.ic_quimica, "Química", "Khan Academy", "La química es el estudio de la materia y los cambios que experimenta. Aquí puedes explorar vídeos, artículos y ejercicios de química por tema.", "https://es.khanacademy.org/science/chemistry"));
 
 
 
