@@ -45,13 +45,11 @@ public class BotonesDeRegistro extends AppCompatActivity {
  void iniciarSesion(View view){
         Intent inicioSesion = new Intent(getApplicationContext(), IniciarSesion.class);
         startActivity(inicioSesion);
-        finish();
     }
 
     public void registrarse(View view){
         Intent registro = new Intent(getApplicationContext(), Registro.class);
         startActivity(registro);
-        finish();
     }
 
     private void inicialize(){
