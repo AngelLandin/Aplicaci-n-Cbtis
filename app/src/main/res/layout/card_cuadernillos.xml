@@ -44,7 +44,8 @@
                     android:adjustViewBounds="true"
                     android:foregroundGravity="center"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/primersemestre"/>
+                    android:src="@drawable/primersemestre"
+                    />
 
                 <TextView
                     android:id="@+id/ir_cuadernillos"
