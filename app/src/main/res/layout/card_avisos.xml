@@ -12,7 +12,7 @@
         android:backgroundTint="@color/lightgray"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="2dp"
+        android:layout_margin="1dp"
         android:animateLayoutChanges="true"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
@@ -49,12 +49,12 @@
             <ImageView
                 android:id="@+id/image_avisos"
                 android:layout_width="match_parent"
-                android:layout_height="320dp"
+                android:layout_height="380dp"
                 android:src="@drawable/algebra"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:foregroundGravity="center"
-                android:layout_marginBottom="2dp"
+                android:layout_marginBottom="1dp"
                 />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
