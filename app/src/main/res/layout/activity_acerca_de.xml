@@ -5,110 +5,321 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F5F6F7"
+    android:backgroundTint="#F5F6F7"
     tools:context=".ui.configuraciones.AcercaDe">
 
-    <androidx.cardview.widget.CardView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        >
+        android:layout_gravity="center">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/light_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dangrek"
+            android:gravity="center"
+            android:text="ACERCA DE ESCUELA ACTIVA"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave_acerca_de"
+        android:backgroundTint="@null"
+        app:background="@null"
+        tools:ignore="MissingConstraints"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DESARROLLADOR"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/sans_pro"/>
+                android:orientation="horizontal">
 
-            <TextView
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/programador_image"
+                        android:layout_width="174dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/programador_dibujo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="236sp"
+                        android:layout_height="30sp"
+                        android:fontFamily="@font/sans_pro"
+                        android:text="Desarrollador"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/programador_image"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="232sp"
+                        android:layout_height="69sp"
+                        android:text="Angel Landín López, estudiante del Centro de Bachillerato Tecnológico Industrial y de Servicios No. 238."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.515"
+                        app:layout_constraintStart_toEndOf="@+id/programador_image"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/javaImage"
+                        android:layout_width="174dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/java_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewProgramacion"
+                        android:layout_width="236sp"
+                        android:layout_height="30sp"
+                        android:fontFamily="@font/sans_pro"
+                        android:text="Programación"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/javaImage"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="232dp"
+                        android:layout_height="69dp"
+                        android:text="Una aplicación nativa de Android desarrollada en Java, que utiliza el controlador de versiones Git y el lenguaje XML para facilitar un diseño orientado a la eficiencia y la claridad."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.515"
+                        app:layout_constraintStart_toEndOf="@+id/javaImage"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewProgramacion"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Angel Landín López"
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/sans_pro" />
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageMission"
+                        android:layout_width="174dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/difusion_informacion"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewMission"
+                        android:layout_width="236sp"
+                        android:layout_height="30sp"
+                        android:fontFamily="@font/sans_pro"
+                        android:text="Misión"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageMission"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="232sp"
+                        android:layout_height="69sp"
+                        android:textAlignment="textStart"
+                        android:text="Facilitar la difusión de información entre el personal y los estudiantes mediante una aplicación dinámica y diversa, repleta de contenido útil para los alumnos."
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.515"
+                        app:layout_constraintStart_toEndOf="@+id/imageMission"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewMission"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageAgradecimiento"
+                        android:layout_width="174dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/agradecimientos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewAgradecimiento"
+                        android:layout_width="236dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/sans_pro"
+                        android:text="AGRADECIMIENTOS"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageAgradecimiento"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="232sp"
+                        android:layout_height="69sp"
+                        android:textAlignment="textStart"
+                        android:text="ExColaborador: Bryan Sem Cepeda \nDocente: Gerardo Belman Vera\nDocente: Saúl Ibarra Álvarez"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.515"
+                        app:layout_constraintStart_toEndOf="@+id/imageAgradecimiento"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewAgradecimiento"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageCbtis"
+                        android:layout_width="174dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/cbtis_logo_238"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewContacto"
+                        android:layout_width="236sp"
+                        android:layout_height="30sp"
+                        android:fontFamily="@font/sans_pro"
+                        android:text="Contacto"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageCbtis"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="232sp"
+                        android:layout_height="69sp"
+                        android:textAlignment="textStart"
+                        android:text="Numero CBTis: 412-157-2263 \nEmail: escuelaactivaii@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.515"
+                        app:layout_constraintStart_toEndOf="@+id/imageCbtis"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewContacto"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
         </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Asesor Técnico"
-                android:textAllCaps="true"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/sans_pro"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Saul Ibarra Álvarez"
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/sans_pro" />
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Asesor Metodológico"
-                android:textAllCaps="true"
-                android:textAlignment="center"
-                android:textSize="30dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/sans_pro"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Gerardo Belmán Vera"
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/sans_pro" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
+    </ScrollView>
 </LinearLayout>

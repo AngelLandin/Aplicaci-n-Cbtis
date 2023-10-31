@@ -14,9 +14,9 @@ import cbtis.app.aplicacionCbtis.databinding.ActivityBotonesDeRegistroBinding;
 
 public class BotonesDeRegistro extends AppCompatActivity {
     private ActivityBotonesDeRegistroBinding binding;
-    private FirebaseAuth firebaseAuth;
-    private Button btnIniciarSesion;
-    private Button btnRegistrarse;
+    private FirebaseAuth firebaseAuth; //Instancia de Firebase para la autenticacion de Usuario
+    private Button btnIniciarSesion; //Boton Iniciar Sesion
+    private Button btnRegistrarse; //Boton Registrarse
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +24,11 @@ public class BotonesDeRegistro extends AppCompatActivity {
         binding = ActivityBotonesDeRegistroBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         inicialize();
-        this.btnIniciarSesion = binding.btnIniciarSesion;
-        this.btnRegistrarse = binding.btnregistrarse;
+        this.btnIniciarSesion = binding.btnIniciarSesion; //Llamamos a nuestro boton Iniciar Sesion
+        this.btnRegistrarse = binding.btnregistrarse; //Llamamos a nuestro Boton Registrar
 
         btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
+            //Agregamos un oyente a nuestro boton para detectar los clicks.
             @Override
             public void onClick(View view) {
                 iniciarSesion(view);
@@ -35,6 +36,7 @@ public class BotonesDeRegistro extends AppCompatActivity {
         });
 
         btnRegistrarse.setOnClickListener(new View.OnClickListener() {
+            //Agregamos un oyente a nuestro boton para detectar los clicks.
             @Override
             public void onClick(View view) {
                 registrarse(view);
@@ -43,8 +45,8 @@ public class BotonesDeRegistro extends AppCompatActivity {
     }
 
  void iniciarSesion(View view){
-        Intent inicioSesion = new Intent(getApplicationContext(), IniciarSesion.class);
-        startActivity(inicioSesion);
+        Intent inicioSesion = new Intent(getApplicationContext(), IniciarSesion.class); //Metodo para cambiar de actividad a otra
+        startActivity(inicioSesion); //Metodo para iniciar la Ac
     }
 
     public void registrarse(View view){

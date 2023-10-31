@@ -93,7 +93,7 @@ public class HogarFragment extends Fragment implements RecyclerViewInterfaceAvis
     public void onItemClick(int position) {
     }
 
-    private void obtenerDatosDesdeFirebase(){
+    private void obtenerDatosDesdeFirebase(){ //Funcion para obtener los datos de la base de datos de FireBase
         Query query = databaseReference;
         query.addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")
@@ -103,10 +103,10 @@ public class HogarFragment extends Fragment implements RecyclerViewInterfaceAvis
                 for(DataSnapshot snapshot : dataSnapshot.getChildren()){
                     ListaElementos listaElementos = new ListaElementos();
 
-                    listaElementos.setImage(snapshot.child("image").getValue().toString());
-                    listaElementos.setDescripcion(snapshot.child("descripcion").getValue().toString());
-                    listaElementos.setUrlAviso(snapshot.child("urlaviso").getValue().toString());
-                    listaElementos.setFecha(snapshot.child("fecha").getValue().toString());
+                    listaElementos.setImage(snapshot.child("image").getValue().toString());//Obteniendo los datos del campo "image" de la BD.
+                    listaElementos.setDescripcion(snapshot.child("descripcion").getValue().toString());//Obteniendo los datos del campo "descripcion" de la bd
+                    listaElementos.setUrlAviso(snapshot.child("urlaviso").getValue().toString());//Obteniendo los datos del campo "urlaviso" de la bd. Nota:Este no lo usamos
+                    listaElementos.setFecha(snapshot.child("fecha").getValue().toString());//Obteniendo los datos del campo "fecha" de la bd.
 
                     listaElementosAvisos.add(listaElementos);
                 }
