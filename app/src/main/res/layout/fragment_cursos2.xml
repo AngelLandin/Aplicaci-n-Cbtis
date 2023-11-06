@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightgray"
+    android:background="#F5F6F7"
     tools:context=".ui.cursos.controlador.CursosFragment"
     android:orientation="vertical">
 

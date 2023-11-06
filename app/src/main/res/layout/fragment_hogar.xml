@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/lightgray"
-    android:backgroundTint="@color/lightgray"
+    android:background="#F5F6F7"
+    android:backgroundTint="#F5F6F7"
     tools:context=".ui.home.HogarFragment">
 
     <TextView
