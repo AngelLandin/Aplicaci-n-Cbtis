@@ -8,10 +8,10 @@ android{
 
     defaultConfig{
         applicationId "cbtis.app.aplicacionCbtis"
-        minSdk 23
+        minSdk 25
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 10
+        versionName '1.01'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
