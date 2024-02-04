@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="color_cbtis">#A6201F</color> <!-- Color normal -->
+
     <color name="colorPrimary">#5a189a</color>
     <color name="colorSecondary">#023e8a</color>
     <color name="purple_200">#FFBB86FC</color>

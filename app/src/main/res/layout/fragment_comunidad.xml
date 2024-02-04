@@ -15,9 +15,11 @@
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabComunidad"
-            android:background="@color/lightgray"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#999999"
+            app:tabTextColor="@color/white"
+            app:tabIconTint="@color/white">
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tabClubs"
