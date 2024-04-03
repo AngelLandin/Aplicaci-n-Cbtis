@@ -14,10 +14,10 @@
         android:orientation="vertical">
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tablayout"
+            android:id="@+id/tabCursosLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#999999"
+            android:layout_height="60dp"
+            android:background="@color/color_cbtis"
             app:tabTextColor="@color/white"
             app:tabIconTint="@color/white"
             >

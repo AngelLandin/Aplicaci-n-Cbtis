@@ -82,7 +82,7 @@ public class CursosFragment extends Fragment implements RecyclerViewInterfaceCur
 
 
 
-        ListAdapter listAdapter = new ListAdapter(this.listaElemento, getContext(), this);
+        ListAdapter listAdapter = new ListAdapter((ArrayList<ListElementCursos>) listaElemento, getContext(), this);
         RecyclerView recyclerView = view.findViewById(R.id.recycler_cursos);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

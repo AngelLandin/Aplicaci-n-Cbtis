@@ -17,9 +17,12 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".ui.cursos.controlador.CursosActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.configuraciones.AcercaDe"
             android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFGuiasEstudio"
             android:exported="true"

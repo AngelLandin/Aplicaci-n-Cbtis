@@ -24,7 +24,7 @@ public class IniciarSesion extends AppCompatActivity {
     private ActivityIniciarSesionBinding binding;
     private TextInputEditText email;
     private TextInputEditText contrasena;
-    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth firebaseAuth; //Instancia de Firebase Authentication
     private Context context;
     private FirebaseAuth.AuthStateListener authStateListener;
 
@@ -41,7 +41,7 @@ public class IniciarSesion extends AppCompatActivity {
         contrasena = binding.campoContrasena;
         firebaseAuth = FirebaseAuth.getInstance();//Obtenemos una instacia de FireBase
 
-        Intent intent = new Intent(IniciarSesion.this, BarraNavegacion.class);
+        Intent intent = new Intent(IniciarSesion.this, BarraNavegacion.class); // Creación del Intent para el cambio de pantalla
 
         binding.btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,7 +78,7 @@ public class IniciarSesion extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Auntenticación correcta", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(), BarraNavegacion.class);
                             startActivity(intent);
-                            finish();
+                            finish(); //Terminamos la Activity en la que estabamos
                             //updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.

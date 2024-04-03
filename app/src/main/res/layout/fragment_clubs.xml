@@ -8,19 +8,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.comunidad.controlador.ClubsFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CLUBS"
-        android:textAllCaps="true"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:fontFamily="@font/fontone"
-        android:letterSpacing="0.07"
-        android:background="#f8f9fa"
-        />
-
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
@@ -38,7 +25,7 @@
             android:orientation="vertical">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/RecyclerView_Clubs"
+                android:id="@+id/recyclerView_Clubs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             </androidx.recyclerview.widget.RecyclerView>

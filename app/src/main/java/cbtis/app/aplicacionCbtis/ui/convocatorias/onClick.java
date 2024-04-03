@@ -1,2 +1,3 @@
-package cbtis.app.aplicacionCbtis.ui.convocatorias;public interface onClick {
+package cbtis.app.aplicacionCbtis.ui.convocatorias;
+public interface onClick {
 }

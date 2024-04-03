@@ -37,7 +37,7 @@
                     android:foregroundGravity="center"
                     android:paddingStart="14dp"
                     android:paddingEnd="14dp"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     app:srcCompat="@drawable/futbol" />
 
                 <LinearLayout

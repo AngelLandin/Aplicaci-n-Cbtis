@@ -51,7 +51,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
 
         ViewHolder(View itemView, RecyclerViewInterfaceConvocatorias recyclerViewInterfaceConvocatorias){
             super(itemView);
-            compania = itemView.findViewById(R.id.name_compania);
+            compania = itemView.findViewById(R.id.NombreCompaniaTitulo);
             descripcion = itemView.findViewById(R.id.descripcion_convocatoria);
             tituloConvocatoria = itemView.findViewById(R.id.titulo_convocatoria);
             urlConvocatoria = itemView.findViewById(R.id.card_convocatoria);
