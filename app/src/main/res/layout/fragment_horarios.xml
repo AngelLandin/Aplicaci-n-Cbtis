@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.comunidad.controlador.HorariosFragment"
+    android:background="#F5F6F7"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_horarios_matutinos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.004"
+            android:layout_marginTop="10dp"
+            android:animateLayoutChanges="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_Matutino"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/colorSecondary"
+                    android:fontFamily="@font/balsamiqsans_bold"
+                    android:textAllCaps="true"
+                    android:text="MATUTINO"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+                <Button
+                    android:id="@+id/button_contabilidad_matutino"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Contabilidad"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/balsamiqsans_regular"
+                    android:background="#6c757d"
+                    app:backgroundTint="@null"
+                    />
+                <Button
+                    android:id="@+id/button_ofimatica_matutino"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/balsamiqsans_regular"
+                    android:text="Ofimática"
+                    android:background="#6c757d"
+                    app:backgroundTint="@null"
+                    />
+
+                <Button
+                    android:id="@+id/button_mecanica_matutino"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Mecánica"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/balsamiqsans_regular"
+                    android:background="#6c757d"
+                    app:backgroundTint="@null"
+                    />
+
+                <Button
+                    android:id="@+id/button_laboratorio_matutino"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Laboratorio Clinico"
+                    android:background="#6c757d"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/balsamiqsans_regular"
+                    app:backgroundTint="@null"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_horarios_vespertino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.004"
+            android:layout_marginTop="10dp"
+            android:animateLayoutChanges="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_Vespertino"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/colorSecondary"
+                    android:fontFamily="@font/balsamiqsans_bold"
+                    android:text="Vespertinos"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    />
+                <Button
+                    android:id="@+id/button_contabilidad_vespertino"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/balsamiqsans_regular"
+                    android:text="Contabilidad"
+                    android:background="#6c757d"
+                    app:backgroundTint="@null"
+                    />
+                <Button
+                    android:id="@+id/button_ofimatica_vespertino"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/balsamiqsans_regular"
+                    android:text="Ofimática"
+                    android:background="#6c757d"
+                    app:backgroundTint="@null"
+                    />
+                <Button
+                    android:id="@+id/button_mecanica_vespertino"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/balsamiqsans_regular"
+                    android:text="Mecánica"
+                    android:background="#6c757d"
+                    app:backgroundTint="@null"
+                    />
+
+                <Button
+                    android:id="@+id/button_laboratorio_vespertino"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/balsamiqsans_regular"
+                    android:text="Laboratorio Clinico"
+                    android:background="#6c757d"
+                    app:backgroundTint="@null"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
