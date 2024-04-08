@@ -57,7 +57,7 @@ public class ComunidadFragment extends Fragment {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager2.setCurrentItem(tab.getPosition());
-                pagerComunidad.notifyItemChanged(tab.getPosition());
+                pagerComunidad.notifyDataSetChanged();
 
             }
 

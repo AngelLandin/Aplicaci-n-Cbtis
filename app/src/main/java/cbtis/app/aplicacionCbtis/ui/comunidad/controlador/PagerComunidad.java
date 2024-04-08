@@ -18,6 +18,8 @@ public class PagerComunidad extends FragmentStateAdapter {
                 return new ClubsFragment();
             case 1:
                 return new EspecialidadesFragment();
+            case 2:
+                return new HorariosFragment();
             default:
                 return new ClubsFragment();
         }
@@ -25,6 +27,6 @@ public class PagerComunidad extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 3;
     }
 }

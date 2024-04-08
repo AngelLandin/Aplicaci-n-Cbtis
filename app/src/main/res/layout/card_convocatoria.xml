@@ -9,7 +9,7 @@
     >
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_convocatoria"
+            android:id="@+id/card_convocatoria_link"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -58,6 +58,7 @@
                     android:textColor="@color/black"
                     android:textAlignment="center"
                     android:layout_gravity="center"/>
+
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

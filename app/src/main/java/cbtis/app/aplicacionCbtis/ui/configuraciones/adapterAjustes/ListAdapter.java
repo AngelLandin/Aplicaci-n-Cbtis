@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import cbtis.app.aplicacionCbtis.R;
-import cbtis.app.aplicacionCbtis.ui.convocatorias.adapter.ListElement;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
     private final RecyclerViewInterfaceAjustes recyclerViewInterfaceAjustes;

@@ -25,7 +25,7 @@
                 android:id="@+id/tabClubs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/icono_clubs"
+                android:icon="@drawable/icon_clubs"
                 android:clickable="true"
                 android:text="Clubs"/>
 
@@ -35,7 +35,15 @@
                 android:layout_height="wrap_content"
                 android:icon="@drawable/especialidades"
                 android:clickable="true"
-                android:text="Especialidades"
+                android:text="Oferta"
+                />
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabHorarios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/icon_horarios"
+                android:clickable="true"
+                android:text="Horarios"
                 />
         </com.google.android.material.tabs.TabLayout>
 
