@@ -9,6 +9,7 @@ import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class PagerController extends FragmentStateAdapter{
+
     public PagerController(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }

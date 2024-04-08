@@ -18,13 +18,13 @@ import cbtis.app.aplicacionCbtis.R;
 import cbtis.app.aplicacionCbtis.ui.cursos.controlador.RecyclerViewInterfaceCursos;
 //Esta clase sera la encargada de nuestro recyclerView
 
-public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
+public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private final RecyclerViewInterfaceCursos recyclerViewInterfaceCursos;
     private List<ListElementCursos> cardData;
     private LayoutInflater mInflater;
     private Context context;
 
-    public ListAdapter(List<ListElementCursos> itemList, Context context, RecyclerViewInterfaceCursos recyclerViewInterfaceCursos){
+    public ListAdapter(List<ListElementCursos> itemList, Context context, RecyclerViewInterfaceCursos recyclerViewInterfaceCursos) {
         this.mInflater = LayoutInflater.from(context);
         this.context = context;
         this.cardData = itemList;
@@ -32,27 +32,31 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
     }
 
     @Override
-    public int getItemCount() {return this.cardData.size();}
+    public int getItemCount() {
+        return this.cardData.size();
+    }
 
     @Override
-    public ListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
+    public ListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = this.mInflater.inflate(R.layout.card_cursos, null);
         return new ListAdapter.ViewHolder(view, recyclerViewInterfaceCursos);
     }
 
     @Override
-    public void onBindViewHolder(final ListAdapter.ViewHolder holder, final int position){
+    public void onBindViewHolder(final ListAdapter.ViewHolder holder, final int position) {
         holder.bindData(this.cardData.get(position));
     }
 
-    public void setItems(List<ListElementCursos> items) { this.cardData = items; }
+    public void setItems(List<ListElementCursos> items) {
+        this.cardData = items;
+    }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView imageCurso;
         TextView tituloCurso, asociacion, descripcionCurso;
         CardView urlCurso;
 
-        ViewHolder(View itemView, RecyclerViewInterfaceCursos recyclerViewInterfaceCursos){
+        ViewHolder(View itemView, RecyclerViewInterfaceCursos recyclerViewInterfaceCursos) {
             super(itemView);
             this.tituloCurso = itemView.findViewById(R.id.titulo_curso);
             this.asociacion = itemView.findViewById(R.id.asociacion_curso);
@@ -63,9 +67,9 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(recyclerViewInterfaceCursos != null){
+                    if (recyclerViewInterfaceCursos != null) {
                         int position = getBindingAdapterPosition();
-                        if(position != RecyclerView.NO_POSITION){
+                        if (position != RecyclerView.NO_POSITION) {
                             recyclerViewInterfaceCursos.onItemClick(position);
                         }
 
@@ -75,7 +79,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
 
         }
 
-        void bindData(final ListElementCursos item){
+        void bindData(final ListElementCursos item) {
             this.imageCurso.setImageResource(item.getImage());
             this.tituloCurso.setText(item.getTituloCurso());
             this.asociacion.setText(item.getAsociacion());

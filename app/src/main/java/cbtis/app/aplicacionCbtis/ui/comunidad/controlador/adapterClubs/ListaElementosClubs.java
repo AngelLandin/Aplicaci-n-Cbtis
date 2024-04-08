@@ -1,21 +1,25 @@
 package cbtis.app.aplicacionCbtis.ui.comunidad.controlador.adapterClubs;
 
 public class ListaElementosClubs {
-    private int imageClub;
+    private String imageClub;
     private String club;
     private String descripcionClub;
 
-    public ListaElementosClubs(int imageClub, String club, String descripcionClub) {
+    public void ListaElementosClubs(){
+
+    }
+
+    public void ListaElementosClubs(String imageClub, String club, String descripcionClub) {
         this.imageClub = imageClub;
         this.club = club;
         this.descripcionClub = descripcionClub;
     }
 
-    public int getImageClub() {
+    public String getImageClub() {
         return imageClub;
     }
 
-    public void setImageClub(int imageClub) {
+    public void setImageClub(String imageClub) {
         this.imageClub = imageClub;
     }
 

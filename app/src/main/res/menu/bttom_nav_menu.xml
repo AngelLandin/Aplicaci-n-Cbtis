@@ -1,41 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
 
     <item
         android:id="@+id/hogar"
         android:title="@string/titulo_hogar"
-        android:icon="@drawable/home"
-        android:iconTint="@color/white"
+        android:icon="@drawable/icono_home"
         />
 
     <item
         android:id="@+id/principal"
         android:title="@string/titulo_convocatorias"
-        android:icon="@drawable/notificaciones"
-        android:iconTint="@color/white"
+        android:icon="@drawable/icono_notifications"
         />
 
     <item
         android:id="@+id/cursos"
         android:title="@string/titulo_cursos"
-        android:icon="@drawable/cursos"
-        android:iconTint="@color/white"
+        android:icon="@drawable/icono_educacion"
         />
 
     <item
         android:id="@+id/comunidad"
         android:title="@string/titulo_comunidad"
-        android:icon="@drawable/comunidad"
-        android:iconTint="@color/white"
+        android:icon="@drawable/icono_people"
         />
 
     <item
         android:id="@+id/configuraciones"
         android:title="@string/titulo_ajustes"
-        android:icon="@drawable/configuraciones"
-        android:iconTint="@color/white"
+        android:icon="@drawable/icono_settings_24"
         />
 
 </menu>

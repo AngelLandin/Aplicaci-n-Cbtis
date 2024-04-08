@@ -49,10 +49,12 @@
             <ImageView
                 android:id="@+id/image_avisos"
                 android:layout_width="match_parent"
-                android:layout_height="380dp"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
                 android:src="@drawable/algebra"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
+                android:scaleType="fitXY"
                 android:foregroundGravity="center"
                 android:layout_marginBottom="1dp"
                 />

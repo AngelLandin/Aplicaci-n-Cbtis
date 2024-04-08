@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
@@ -51,10 +50,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
 
         ViewHolder(View itemView, RecyclerViewInterfaceConvocatorias recyclerViewInterfaceConvocatorias){
             super(itemView);
-            compania = itemView.findViewById(R.id.name_compania);
+            compania = itemView.findViewById(R.id.NombreCompaniaTitulo);
             descripcion = itemView.findViewById(R.id.descripcion_convocatoria);
             tituloConvocatoria = itemView.findViewById(R.id.titulo_convocatoria);
-            urlConvocatoria = itemView.findViewById(R.id.card_convocatoria);
+            urlConvocatoria = itemView.findViewById(R.id.card_convocatoria_link);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

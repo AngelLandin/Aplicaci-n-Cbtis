@@ -80,7 +80,7 @@ public class HogarFragment extends Fragment implements RecyclerViewInterfaceAvis
 
         obtenerDatosDesdeFirebase();
 
-        ListAdapter listAdapter = new ListAdapter(listaElementosAvisos, mContext, recyclerViewInterfaceAvisos);
+        ListAdapter listAdapter = new ListAdapter((List<ListaElementos>) listaElementosAvisos, mContext, this);
         this.recyclerViewAvisos.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setReverseLayout(true);
@@ -110,7 +110,7 @@ public class HogarFragment extends Fragment implements RecyclerViewInterfaceAvis
 
                     listaElementosAvisos.add(listaElementos);
                 }
-                listAdapterAvisos = new ListAdapter(listaElementosAvisos, mContext, recyclerViewInterfaceAvisos);
+                listAdapterAvisos = new ListAdapter((List<ListaElementos>) listaElementosAvisos, mContext, recyclerViewInterfaceAvisos);
                 recyclerViewAvisos.setAdapter(listAdapterAvisos);
                 listAdapterAvisos.notifyDataSetChanged();
             }

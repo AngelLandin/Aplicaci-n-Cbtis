@@ -17,9 +17,73 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".ui.comunidad.controlador.horarios.VisoresPDF.VisorLaboratorioVespertinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.VisoresPDF.VisorLaboratorioMatutinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.VisoresPDF.VisorMecanicaVespertinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.VisoresPDF.VisorMecanicaMatutinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.VisoresPDF.VisorOfimaticaVespertinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.VisoresPDF.VisorOfimaticaMatutinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.VisoresPDF.VisorContabilidadVespertinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.VisoresPDF.VisorContabilidadMatutinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.LaboratorioVespertinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.MecanicaVespertinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.OfimaticaVespertinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.ContabilidadVespertinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.LaboratorioMatutinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.MecanicaMatutinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.OfimaticaMatutinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.comunidad.controlador.horarios.ContabilidadMatutinoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".ui.configuraciones.AcercaDe"
             android:exported="true"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.cursos.cuadernillos.VisoresPDF.VisorPDFGuiasEstudio"
             android:exported="true"

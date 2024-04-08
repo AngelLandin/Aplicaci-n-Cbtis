@@ -15,7 +15,6 @@ import java.util.Calendar;
 import java.util.List;
 
 import cbtis.app.aplicacionCbtis.R;
-import cbtis.app.aplicacionCbtis.ui.cursos.adapterCursos.ListElementCursos;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private final RecyclerViewInterfaceCuadernillos recyclerViewInterfaceCuadernillos;

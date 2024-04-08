@@ -21,10 +21,10 @@
             android:textAllCaps="true"
             android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:fontFamily="@font/fontone"
             android:letterSpacing="0.07"
-            android:background="#f8f9fa"
+            android:background="@color/color_cbtis"
             />
 
         <View

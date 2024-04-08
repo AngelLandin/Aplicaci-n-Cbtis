@@ -14,30 +14,42 @@
         android:orientation="vertical">
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tablayout"
+            android:id="@+id/tabCursosLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="60dp"
+            android:background="@color/color_cbtis"
+            app:tabTextColor="@color/white"
+            app:tabIconTint="@color/white"
+            >
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tabCursos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:icon="@drawable/icono_educacion"
                 android:text="Cursos"
-                android:icon="@drawable/cursos" />
+                 />
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tabGuias"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Guías"
-                android:icon="@drawable/guias"/>
+                android:icon="@drawable/libros_pdf"
+                app:itemIconTint="@color/white"
+                app:itemTextColor="@color/white"/>
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tabLibros"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Libros"
-                android:icon="@drawable/libros"/>
+                android:icon="@drawable/libro_image"
+                app:itemIconTint="@color/white"
+                app:itemTextColor="@color/white"/>
         </com.google.android.material.tabs.TabLayout>
 
         <androidx.viewpager2.widget.ViewPager2

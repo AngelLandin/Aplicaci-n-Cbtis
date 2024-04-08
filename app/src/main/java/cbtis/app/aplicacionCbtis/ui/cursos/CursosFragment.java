@@ -6,6 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager2.widget.ViewPager2;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,7 +44,7 @@ public class CursosFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        tabLayout = view.findViewById(R.id.tablayout);
+        tabLayout = view.findViewById(R.id.tabCursosLayout);
         viewPager2 = view.findViewById(R.id.viewPager);
 
         pagerAdapter = new PagerController((FragmentActivity) getContext());
@@ -54,10 +56,10 @@ public class CursosFragment extends Fragment {
                 if(tab.getPosition() == 0){
                     pagerAdapter.notifyDataSetChanged();
                 }
-                if(tab.getPosition() == 1){
+                else if (tab.getPosition() == 1) {
                     pagerAdapter.notifyDataSetChanged();
                 }
-                if(tab.getPosition() == 2){
+                else if (tab.getPosition() == 2) {
                     pagerAdapter.notifyDataSetChanged();
                 }
             }

@@ -13,16 +13,18 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        >
+
 
         <View
-            android:id="@+id/view"
+            android:id="@+id/vistaColor"
             android:layout_width="match_parent"
-            android:layout_height="125dp"
+            android:layout_height="135dp"
             android:background="@color/light_blue"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView5"
@@ -36,19 +38,20 @@
             android:textColor="@color/white"
             android:textSize="35sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintBottom_toBottomOf="@+id/vistaColor"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/view"
-            app:layout_constraintTop_toTopOf="@+id/view"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintStart_toStartOf="@+id/vistaColor"
+            app:layout_constraintTop_toTopOf="@+id/vistaColor"/>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View
+        android:id="@+id/olaDisenio"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@drawable/ic_wave_acerca_de"
-        android:backgroundTint="@null"
-        tools:ignore="MissingConstraints" />
+        android:backgroundTint="@null" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -62,7 +65,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -75,7 +79,8 @@
                         android:src="@drawable/programador_dibujo"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/textoDesarrollador"/>
 
                     <TextView
                         android:id="@+id/textView3"
@@ -93,18 +98,19 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:layout_width="220dp"
-                        android:layout_height="78dp"
+                        android:id="@+id/textoDesarrollador"
+                        android:layout_width="200dp"
+                        android:layout_height="90dp"
                         android:text="Angel Landín López, estudiante del Centro de Bachillerato Tecnológico Industrial y de Servicios No. 238."
-                        android:textAlignment="textStart"
                         android:textColor="@color/black"
                         android:textSize="15sp"
+                        android:gravity="fill_vertical"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toEndOf="@+id/programador_image"
                         app:layout_constraintTop_toBottomOf="@+id/textView3"
-                        app:layout_constraintVertical_bias="1.0" />
+                         />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
@@ -117,6 +123,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -128,7 +135,8 @@
                         android:src="@drawable/java_logo"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/textoProgramacion"/>
 
                     <TextView
                         android:id="@+id/textViewProgramacion"
@@ -146,25 +154,22 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:layout_width="225dp"
-                        android:layout_height="120dp"
+                        android:id="@+id/textoProgramacion"
+                        android:layout_width="190dp"
+                        android:layout_height="135dp"
+                        android:gravity="fill_vertical"
                         android:text="Una aplicación nativa de Android desarrollada en Java, que utiliza el controlador de versiones Git y el lenguaje XML para facilitar un diseño orientado a la eficiencia y la claridad."
-                        android:textAlignment="textStart"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintHorizontal_bias=".5"
                         app:layout_constraintStart_toEndOf="@+id/javaImage"
                         app:layout_constraintTop_toBottomOf="@+id/textViewProgramacion"
                         app:layout_constraintVertical_bias="1.0" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="30dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -182,7 +187,8 @@
                         android:src="@drawable/difusion_informacion"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textoMision"/>
 
                     <TextView
                         android:id="@+id/textViewMission"
@@ -200,10 +206,11 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:layout_width="220dp"
-                        android:layout_height="119dp"
+                        android:id="@id/textoMision"
+                        android:layout_width="190dp"
+                        android:layout_height="125dp"
                         android:text="Facilitar la difusión de información entre el personal y los estudiantes mediante una aplicación dinámica y diversa, repleta de contenido útil para los alumnos."
-                        android:textAlignment="textStart"
+                        android:gravity="fill_vertical"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -235,7 +242,8 @@
                         android:src="@drawable/agradecimientos"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textoAgradecimientos"/>
 
                     <TextView
                         android:id="@+id/textViewAgradecimiento"
@@ -253,8 +261,9 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:layout_width="228dp"
-                        android:layout_height="71dp"
+                        android:id="@+id/textoAgradecimientos"
+                        android:layout_width="200dp"
+                        android:layout_height="90dp"
                         android:text="ExColaborador: Bryan Sem Cepeda \nDocente: Gerardo Belman Vera\nDocente: Saúl Ibarra Álvarez"
                         android:textAlignment="textStart"
                         android:textColor="@color/black"
@@ -287,7 +296,8 @@
                         android:src="@drawable/cbtis_logo_238"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textoContacto"/>
 
                     <TextView
                         android:id="@+id/textViewContacto"
@@ -305,10 +315,10 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:layout_width="229dp"
-                        android:layout_height="70dp"
-                        android:text="Numero CBTis: 412 157 2263 \nNúmero CBTis: 412 157 2297 \nE-mail: cbtis238.dir@dgeti.sems.god.mx \nE-mail: escuelaactivaii@gmail.com"
-                        android:textAlignment="textStart"
+                        android:id="@+id/textoContacto"
+                        android:layout_width="213dp"
+                        android:layout_height="142dp"
+                        android:gravity="fill_vertical"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -316,7 +326,7 @@
                         app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toEndOf="@+id/imageCbtis"
                         app:layout_constraintTop_toBottomOf="@+id/textViewContacto"
-                        app:layout_constraintVertical_bias="1.0" />
+                        app:layout_constraintVertical_bias="0.0" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
         </LinearLayout>
