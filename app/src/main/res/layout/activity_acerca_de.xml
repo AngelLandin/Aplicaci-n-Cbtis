@@ -32,16 +32,18 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/dangrek"
             android:gravity="center"
-            android:text="ACERCA DE ESCUELA ACTIVA"
+            android:text="ACERCA DE ESCUELA ACTIVA CBTIS 238"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/vistaColor"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/vistaColor"
-            app:layout_constraintTop_toTopOf="@+id/vistaColor"/>
+            app:layout_constraintTop_toTopOf="@+id/vistaColor"
+            app:layout_constraintVertical_bias="0.407" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -100,8 +102,8 @@
                     <TextView
                         android:id="@+id/textoDesarrollador"
                         android:layout_width="200dp"
-                        android:layout_height="90dp"
-                        android:text="Angel Landín López, estudiante del Centro de Bachillerato Tecnológico Industrial y de Servicios No. 238."
+                        android:layout_height="120dp"
+                        android:text="Angel Landín López, estudiante del Centro de Bachillerato Tecnológico Industrial y de Servicios No. 238. Generación 2021-2024 Ofimática."
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         android:gravity="fill_vertical"
@@ -264,7 +266,7 @@
                         android:id="@+id/textoAgradecimientos"
                         android:layout_width="200dp"
                         android:layout_height="90dp"
-                        android:text="ExColaborador: Bryan Sem Cepeda \nDocente: Gerardo Belman Vera\nDocente: Saúl Ibarra Álvarez"
+                        android:text="Colaborador: Bryan Sem Cepeda Gómez. \nDocente: Gerardo Belman Vera.\nDocente: Saúl Ibarra Álvarez."
                         android:textAlignment="textStart"
                         android:textColor="@color/black"
                         android:textSize="15sp"

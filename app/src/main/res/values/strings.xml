@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Escuela Activa</string>
+    <string name="app_name">CBTIS 238</string>
     <string name="icono_persona">Icono persona</string>
     <string name="login">INICIAR SESIÓN</string>
     <string name="mensaje_cuenta">Registrarse</string>
-    <string name="password">Contraseña</string>
+    <string name="password">Password</string>
     <string name="mail">Email</string>
     <string name="btn_continuar">Continuar</string>
     <string name="mesaje_de_inicio">Mantente informado de todo lo que sucede en tu institución, ¡ingresa ahora!</string>
@@ -16,8 +16,8 @@
     <string name="titulo_comunidad">Comunidad</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="tecnico_laboratorio">Técnico Profesional Laboratorista Clinico</string>
-    <string name="egresado_laboratorio">El estudiante al egresar como Técnico Profesional Laboratorista Clinico, sera capaz de:</string>
+    <string name="tecnico_laboratorio">Técnico Profesional Laboratorista Clínico</string>
+    <string name="egresado_laboratorio">El estudiante al egresar como Técnico Profesional Laboratorista Clínico, será capaz de:</string>
     <string name="tecnico_ofimatica">Técnico en Ofimática</string>
     <string name="tecnico_mecanico">MECÁNICA INDUSTRIAL</string>
     <!-- TODO: Remove or change this placeholder text -->

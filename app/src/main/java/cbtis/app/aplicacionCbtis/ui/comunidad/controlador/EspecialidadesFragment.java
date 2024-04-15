@@ -39,13 +39,13 @@ public class EspecialidadesFragment extends Fragment {
             "\n" +
             "Obtener diferentes tipos de muestras del cuerpo humano como:         \n" +
             "\n" +
-            "Aplicar las normas vigentes para cumplir el reglamento del sector salud. \n \n" + "Esta capasitado además para continuar sus estudios universitarios en carreras acordes como: Medicina, Biólogo, Veterinario, Odontología, etc.";
-    private String descripcionOfimatica = "En este sentido aplicará los principios de la informática de una organización realizando documentos electrónicos, aplicando sistemas básicos de información, diseña y gestiona bases de datos.\n" +
+            "Aplicar las normas vigentes para cumplir el reglamento del sector salud. \n \n" + "Estar capacitado además para continuar sus estudios universitarios en carreras acordes como: Medicina, Biólogo, Veterinaria, Odontología, etc.";
+    private String descripcionOfimatica = "En este sentido aplicará los principios de la informática de una organización realizando documentos electrónicos, aplicando sistemas básicos de información, diseñando y gestionando bases de datos.\n" +
             "\n" +
             "Así mismo con amplio conocimiento y actitud de liderazgo, contará con habilidad para establecer relaciones interpersonales y con el medio ambiente; esta orientación se dará a través del componente profesional.";
-    private String descripcionMecanica = "operar máquinas de soldar para la aplicación de diversas soldaduras y realizar trabajos de banco pata ajustar piezas mecánicas utilizando herramientas de corte manuales de uso común e instrumentos de medición para el logro de un proyecto especifico siguiendo procedimientos, instrucciones y normas de seguridad.\n" +
+    private String descripcionMecanica = "Operar máquinas de soldar para la aplicación de diversas soldaduras y realizar trabajos de banco para ajustar piezas mecánicas utilizando herramientas de corte manuales de uso común e instrumentos de medición para el logro de un proyecto específico siguiendo procedimientos, instrucciones y normas de seguridad.\n" +
             "\n" +
-            "Programar y llevar a cabo el manejo de la máquinaria industrial, aplicando sus conocimientos con un ampliio sentido de responsabilidad.\n" +
+            "Programar y llevar a cabo el manejo de la máquinaria industrial, aplicando sus conocimientos con un amplio sentido de responsabilidad.\n" +
             "\n" +
             "Desempeñar funciones de supervición, operación e instalación de máquinas de producción de bienes capital.\n" +
             "\n" +

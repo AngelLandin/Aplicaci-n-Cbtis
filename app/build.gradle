@@ -10,8 +10,8 @@ android{
         applicationId "cbtis.app.aplicacionCbtis"
         minSdk 25
         targetSdk 33
-        versionCode 10
-        versionName '1.01'
+        versionCode 12
+        versionName '1.11'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

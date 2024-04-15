@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_bg"
     android:gravity="fill_vertical"
-    tools:context=".BotonesDeRegistro">
+    tools:context=".BotonesDeRegistro"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="-59dp">
 
 
     <TextView
@@ -29,9 +31,9 @@
 
     <Button
         android:id="@+id/btnIniciarSesion"
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="@drawable/color_boton_iniciar_sesion"
         android:fontFamily="@font/kanit_bold"
         android:text="iniciar sesion"
@@ -41,16 +43,16 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toTopOf="@+id/btnregistrarse"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.905" />
+        app:layout_constraintVertical_bias="0.78" />
 
     <Button
         android:id="@+id/btnregistrarse"
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="@drawable/color_boton_iniciar_sesion"
         android:fontFamily="@font/kanit_bold"
         android:text="registrarse"
@@ -60,10 +62,10 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.53" />
+        app:layout_constraintVertical_bias="0.394" />
 
     <Button
         android:id="@+id/googleButton"
@@ -82,10 +84,29 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnregistrarse"
-        app:layout_constraintVertical_bias="0.114" />
+        app:layout_constraintVertical_bias="0.106" />
+
+    <Button
+        android:id="@+id/bottonInvitado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/color_boton_iniciar_sesion"
+        android:fontFamily="@font/kanit_bold"
+        android:text="INVITADO"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/googleButton"
+        app:layout_constraintVertical_bias="0.192" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

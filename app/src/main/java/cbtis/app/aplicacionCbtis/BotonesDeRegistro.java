@@ -41,6 +41,7 @@ public class BotonesDeRegistro extends AppCompatActivity {
     private Button btnRegistrarse; //Boton Registrarse
     private Button googleAuth; //Botn de registro con Google
     private FirebaseDatabase dataBase;
+    private Button buttonInvitado;
     private GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SING_IN = 9001;
     private static final String TAG = "GoogleActivity";
@@ -55,6 +56,7 @@ public class BotonesDeRegistro extends AppCompatActivity {
         this.btnIniciarSesion = binding.btnIniciarSesion; //Llamamos a nuestro boton Iniciar Sesion
         this.btnRegistrarse = binding.btnregistrarse; //Llamamos a nuestro Boton Registrar
         this.googleAuth = binding.googleButton; //Llamamos a nuestro Boton de Registro con Google
+        this.buttonInvitado = binding.bottonInvitado; //Llamamos a nuestro Boton de invitado
 
         this.firebaseAuth = FirebaseAuth.getInstance();
         this.dataBase = FirebaseDatabase.getInstance();
@@ -94,7 +96,16 @@ public class BotonesDeRegistro extends AppCompatActivity {
                 registrarse(view);
             }
         });
+
+        buttonInvitado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), BarraNavegacion.class);
+                startActivity(intent);
+            }
+        });
     }
+
 
     void iniciarSesion(View view){
         Intent inicioSesion = new Intent(getApplicationContext(), IniciarSesion.class); //Metodo para cambiar de actividad a otra
